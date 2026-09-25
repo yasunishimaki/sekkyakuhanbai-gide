@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="description" content="学生向けの接客販売職ガイド（授業用教材）。接客販売は業態によって売るもの・客層・単価・働く時間がまったく違います。9つの職種を動画と1日の流れで比較できます。">
+<title>接客販売職まるわかりナビ｜アルバイトの先にある仕事</title>
+<style>
+:root{
+  --ink:#1f2933; --ink-soft:#52606d; --ink-faint:#7b8794;
+  --paper:#fbfaf7; --card:#ffffff; --line:#e3e0d8;
+  --accent:#1f6f5c; --accent-soft:#e6f2ee; --accent-deep:#14503f;
+  --warm:#c96a3c; --warm-soft:#fbeee6;
+  --blue:#2f5d8c; --blue-soft:#e7eef6;
+  --purple:#6b4f8a; --purple-soft:#efe9f5;
+  --base:16px; --radius:14px;
+  --shadow:0 1px 2px rgba(31,41,51,.05), 0 8px 24px rgba(31,41,51,.06);
+}
+html[data-zoom="big"]{--base:19px;}
+html[data-zoom="huge"]{--base:22px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:82px;}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  font-size:var(--base); line-height:1.85; letter-spacing:.01em;
+}
+a{color:var(--accent-deep);}
+
+.topbar{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.topbar-inner{max-width:1180px;margin:0 auto;padding:.55rem 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+.brand{font-weight:800;font-size:1.02rem;white-space:nowrap;}
+.brand span{color:var(--accent);}
+.navlinks{display:flex;gap:.15rem;flex-wrap:wrap;flex:1;}
+.navlinks a{text-decoration:none;color:var(--ink-soft);font-size:.82rem;font-weight:600;padding:.35rem .6rem;border-radius:999px;white-space:nowrap;}
+.navlinks a:hover{background:var(--accent-soft);color:var(--accent-deep);}
+.zoomctl{display:flex;align-items:center;gap:.3rem;font-size:.75rem;color:var(--ink-faint);}
+.zoomctl button{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:.22rem .5rem;cursor:pointer;font-size:.78rem;font-weight:700;color:var(--ink-soft);font-family:inherit;}
+.zoomctl button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.2rem 5rem;}
+section{padding-top:3.2rem;}
+h2{font-size:1.55rem;line-height:1.4;margin:0 0 .3rem;display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;}
+h2 .num{font-size:.72rem;font-weight:800;color:var(--accent);background:var(--accent-soft);padding:.2rem .55rem;border-radius:999px;letter-spacing:.08em;}
+.lead{color:var(--ink-soft);margin:.4rem 0 1.6rem;max-width:64ch;}
+
+.hero{padding:3.4rem 0 1rem;}
+.hero .kicker{font-size:.78rem;font-weight:800;letter-spacing:.14em;color:var(--warm);margin-bottom:.7rem;}
+.hero h1{font-size:2.45rem;line-height:1.32;margin:0 0 1rem;font-weight:800;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero p{font-size:1.02rem;color:var(--ink-soft);max-width:62ch;margin:0 0 1.4rem;}
+.hero-cta{display:flex;gap:.6rem;flex-wrap:wrap;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.9rem;padding:.7rem 1.3rem;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;font-family:inherit;}
+.btn.ghost{background:transparent;color:var(--accent-deep);}
+.btn:hover{filter:brightness(1.08);}
+
+.strip{background:var(--warm-soft);border:1px solid #f0dccf;border-radius:var(--radius);padding:1.4rem 1.5rem;margin-top:2.2rem;}
+.strip h4{margin:0 0 .7rem;font-size:1rem;color:var(--warm);}
+.strip ul{margin:0;padding-left:1.2rem;color:var(--ink-soft);}
+.strip li{margin-bottom:.25rem;}
+.strip .fix{margin-top:1rem;padding-top:.9rem;border-top:1px dashed #e0c4b0;font-weight:700;color:var(--ink);}
+
+.mapgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;}
+.mapcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem;box-shadow:var(--shadow);}
+.mapcard h4{margin:0 0 .2rem;font-size:1rem;}
+.mapcard .who{font-size:.78rem;font-weight:800;letter-spacing:.06em;margin-bottom:.5rem;}
+.mapcard p{margin:0 0 .7rem;font-size:.9rem;color:var(--ink-soft);}
+.mapcard .jobs{display:flex;flex-wrap:wrap;gap:.3rem;}
+.mapcard .jobs span{font-size:.78rem;background:var(--paper);border:1px solid var(--line);padding:.16rem .55rem;border-radius:999px;}
+.m1{border-top:4px solid var(--accent);} .m1 .who{color:var(--accent);}
+.m2{border-top:4px solid var(--blue);} .m2 .who{color:var(--blue);}
+.m3{border-top:4px solid var(--warm);} .m3 .who{color:var(--warm);}
+
+.filters{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.4rem;}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.4rem .95rem;font-size:.85rem;font-weight:700;color:var(--ink-soft);cursor:pointer;font-family:inherit;}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+
+.jobs-list{display:flex;flex-direction:column;gap:1.1rem;}
+.job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;scroll-margin-top:90px;}
+.job.hidden{display:none;}
+.job-head{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;cursor:pointer;user-select:none;border-left:6px solid var(--accent);}
+.job-head:hover{background:#fcfcfa;}
+.job-badge{flex:none;width:52px;height:52px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.5rem;}
+.job-titles{flex:1;min-width:0;}
+.job-titles h3{margin:0;font-size:1.22rem;line-height:1.4;}
+.job-titles .catch{color:var(--ink-soft);font-size:.9rem;margin-top:.15rem;}
+.job-tags{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.5rem;}
+.job-tags span{font-size:.72rem;font-weight:700;padding:.14rem .5rem;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--ink-faint);}
+.toggle{flex:none;align-self:center;font-size:.78rem;font-weight:800;color:var(--accent);display:flex;align-items:center;gap:.3rem;white-space:nowrap;}
+.toggle .arw{transition:transform .2s;display:inline-block;}
+.job[open-state="1"] .toggle .arw{transform:rotate(180deg);}
+.job-body{display:none;padding:0 1.4rem 1.5rem;border-top:1px solid var(--line);}
+.job[open-state="1"] .job-body{display:block;}
+
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:1.6rem;margin-top:1.3rem;}
+@media(max-width:820px){.split{grid-template-columns:1fr;}}
+.blk{margin-bottom:1.3rem;}
+.blk h5{margin:0 0 .5rem;font-size:.78rem;font-weight:800;letter-spacing:.09em;color:var(--accent);}
+.blk ul{margin:0;padding-left:1.15rem;}
+.blk li{margin-bottom:.28rem;font-size:.93rem;}
+.blk p{margin:0;font-size:.93rem;color:var(--ink-soft);}
+.timeline{list-style:none;margin:0;padding:0;}
+.timeline li{display:flex;gap:.8rem;font-size:.9rem;padding:.3rem 0;border-bottom:1px dotted var(--line);}
+.timeline li:last-child{border-bottom:none;}
+.timeline .t{flex:none;width:4.6em;font-weight:800;color:var(--warm);font-variant-numeric:tabular-nums;}
+.tools{display:flex;flex-wrap:wrap;gap:.35rem;}
+.tools span{font-size:.82rem;background:var(--blue-soft);color:var(--blue);padding:.2rem .6rem;border-radius:6px;font-weight:600;}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;}
+@media(max-width:560px){.fit{grid-template-columns:1fr;}}
+.fitbox{border-radius:10px;padding:.85rem 1rem;font-size:.9rem;}
+.fitbox h6{margin:0 0 .35rem;font-size:.82rem;font-weight:800;letter-spacing:.05em;}
+.fit-good{background:var(--accent-soft);} .fit-good h6{color:var(--accent-deep);}
+.fit-hard{background:#fdf3ef;} .fit-hard h6{color:var(--warm);}
+.fitbox ul{margin:0;padding-left:1.05rem;}
+.fitbox li{margin-bottom:.2rem;}
+.path{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.85rem;font-weight:700;}
+.path span{background:var(--purple-soft);color:var(--purple);padding:.28rem .7rem;border-radius:8px;}
+.path i{color:var(--ink-faint);font-style:normal;}
+.videos{display:flex;flex-direction:column;gap:1.1rem;}
+.vid{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.9rem;}
+.vid .vtitle{font-size:.86rem;font-weight:700;margin-bottom:.15rem;line-height:1.5;}
+.vid .vmeta{font-size:.74rem;color:var(--ink-faint);margin-bottom:.6rem;}
+.vid .vmeta b{color:var(--accent);}
+.ratio{position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000;}
+.ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.vid .vpoint{margin-top:.6rem;font-size:.82rem;color:var(--ink-soft);background:var(--card);border-left:3px solid var(--warm);padding:.5rem .7rem;border-radius:0 6px 6px 0;}
+.vid .vpoint b{color:var(--warm);}
+
+/* ---------- vs（対比表。複数置けるよう data属性でラベルを出す） ---------- */
+.vs{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:1.6rem;}
+.vs-row{display:grid;grid-template-columns:9em 1fr 1fr;border-bottom:1px solid var(--line);}
+.vs.three .vs-row{grid-template-columns:9em 1fr 1fr 1fr;}
+.vs-row:last-child{border-bottom:none;}
+.vs-row>div{padding:.75rem .9rem;font-size:.88rem;}
+.vs-row .lbl{background:var(--paper);font-weight:800;font-size:.8rem;color:var(--ink-soft);display:flex;align-items:center;}
+.vs-row .a,.vs-row .b,.vs-row .c{border-left:1px solid var(--line);color:var(--ink-soft);}
+.vs-row .b{background:#f7fbfa;}
+.vs-head>div{font-weight:800;font-size:.85rem;padding:.7rem .9rem;}
+.vs-head .a,.vs-head .c{color:var(--ink-faint);} .vs-head .b{color:var(--accent-deep);}
+.vs-cap{font-size:.8rem;font-weight:800;letter-spacing:.05em;color:var(--accent);margin:1.6rem 0 .5rem;}
+@media(max-width:760px){
+  .vs-row,.vs.three .vs-row{grid-template-columns:1fr;}
+  .vs-row .lbl{border-bottom:1px solid var(--line);}
+  .vs-row .a,.vs-row .b,.vs-row .c{border-left:none;}
+  .vs-row .a::before,.vs-row .b::before,.vs-row .c::before{content:attr(data-l) "：";font-weight:800;color:var(--ink-faint);}
+  .vs-row .b::before{color:var(--accent-deep);}
+  .vs-head{display:none;}
+}
+
+/* 商材プロフィール */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.5rem;}
+.specbox{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.55rem .75rem;}
+.specbox b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.06em;color:var(--ink-faint);margin-bottom:.1rem;}
+.specbox span{font-size:.88rem;font-weight:700;}
+
+/* 早見表 */
+#gyoTable{min-width:1060px;}
+td.gyoname{font-weight:800;}
+.tagS{font-size:.72rem;font-weight:800;padding:.1rem .45rem;border-radius:999px;white-space:nowrap;}
+.t-kaiten{background:var(--accent-soft);color:var(--accent-deep);}
+.t-tanka{background:var(--warm-soft);color:#8a4526;}
+.gyo-link{display:inline-block;margin-top:.45rem;font-size:.75rem;font-weight:800;white-space:nowrap;text-decoration:none;background:var(--accent-soft);color:var(--accent-deep);padding:.14rem .5rem;border-radius:999px;}
+.gyo-link:hover{background:var(--accent);color:#fff;}
+
+/* ---------- 実在企業 ---------- */
+.comp-tools{display:flex;flex-direction:column;gap:.7rem;margin-bottom:1.2rem;}
+.comp-row{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;}
+.comp-row>b{font-size:.74rem;font-weight:800;letter-spacing:.06em;color:var(--ink-faint);margin-right:.2rem;min-width:3.4em;}
+.comp-chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.24rem .7rem;font-size:.79rem;font-weight:700;color:var(--ink-soft);cursor:pointer;font-family:inherit;}
+.comp-chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.comp-search{flex:1;min-width:190px;border:1.5px solid var(--line);border-radius:999px;padding:.4rem .9rem;font-size:.86rem;font-family:inherit;background:var(--card);color:var(--ink);}
+.comp-search:focus{outline:2px solid var(--accent-soft);border-color:var(--accent);}
+.comp-count{font-size:.82rem;color:var(--ink-faint);margin:0 0 .8rem;}
+.comp-count b{color:var(--accent-deep);font-size:1.05rem;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:.8rem;}
+.comp-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;box-shadow:var(--shadow);}
+.comp-card h4{margin:0 0 .4rem;font-size:.97rem;line-height:1.45;}
+.comp-badges{display:flex;gap:.28rem;flex-wrap:wrap;margin-bottom:.45rem;}
+.comp-badges span{font-size:.69rem;font-weight:800;padding:.1rem .45rem;border-radius:999px;white-space:nowrap;}
+.cb-cat{background:var(--paper);border:1px solid var(--line);color:var(--ink-faint);}
+.s-ote{background:var(--blue-soft);color:var(--blue);}
+.s-chu{background:var(--accent-soft);color:var(--accent-deep);}
+.s-chi{background:var(--warm-soft);color:#8a4526;}
+.s-non{background:var(--purple-soft);color:var(--purple);}
+.comp-biz{margin:0 0 .45rem;font-size:.83rem;line-height:1.65;color:var(--ink-soft);}
+.comp-meta{margin:0;font-size:.75rem;color:var(--ink-faint);}
+.comp-more{display:flex;justify-content:center;margin-top:1.2rem;}
+.comp-empty{background:var(--warm-soft);border-radius:10px;padding:1rem 1.1rem;font-size:.9rem;color:#8a4526;}
+.comp-mini{display:flex;flex-wrap:wrap;gap:.35rem;}
+.comp-mini .cm{display:inline-flex;align-items:baseline;gap:.35rem;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.22rem .65rem;font-size:.82rem;}
+.comp-mini .cm b{font-weight:700;color:var(--ink);}
+.comp-mini .cm i{font-style:normal;font-size:.67rem;font-weight:800;color:var(--ink-faint);}
+.comp-inline-link{margin:.4rem 0 0;font-size:.82rem;font-weight:700;}
+.comp-caution{margin:.6rem 0 0;font-size:.79rem;line-height:1.7;color:var(--ink-soft);background:var(--warm-soft);border-radius:8px;padding:.55rem .75rem;}
+.comp-caution a{font-weight:700;white-space:nowrap;}
+.comp-res{margin:.55rem 0 0;font-size:.82rem;color:var(--ink-soft);border-top:1px dotted var(--line);padding-top:.5rem;}
+.comp-res a{font-weight:700;white-space:nowrap;}
+
+/* real */
+.realgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;}
+.realcard{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--warm);border-radius:var(--radius);padding:1.1rem 1.25rem;box-shadow:var(--shadow);}
+.realcard h4{margin:0 0 .4rem;font-size:1rem;}
+.realcard p{margin:0 0 .6rem;font-size:.9rem;color:var(--ink-soft);}
+.realcard .tip{font-size:.83rem;background:var(--warm-soft);border-radius:8px;padding:.5rem .75rem;color:#8a4526;}
+.realcard .tip b{color:var(--warm);}
+
+/* career ladder */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.8rem;margin-bottom:1.4rem;}
+.step{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--purple);border-radius:var(--radius);padding:1rem 1.15rem;box-shadow:var(--shadow);}
+.step .yr{font-size:.72rem;font-weight:800;letter-spacing:.07em;color:var(--purple);background:var(--purple-soft);display:inline-block;padding:.15rem .55rem;border-radius:999px;margin-bottom:.5rem;}
+.step h4{margin:0 0 .35rem;font-size:1rem;}
+.step p{margin:0;font-size:.87rem;color:var(--ink-soft);}
+.branch{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1rem;}
+.brcard{background:var(--blue-soft);border-radius:var(--radius);padding:1.05rem 1.2rem;}
+.brcard h4{margin:0 0 .35rem;font-size:.98rem;color:var(--blue);}
+.brcard p{margin:0;font-size:.88rem;color:var(--ink-soft);}
+
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.skillcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.25rem;box-shadow:var(--shadow);}
+.skillcard .ic{font-size:1.5rem;}
+.skillcard h4{margin:.4rem 0 .35rem;font-size:1rem;}
+.skillcard p{margin:0 0 .6rem;font-size:.88rem;color:var(--ink-soft);}
+.skillcard .ex{font-size:.82rem;background:var(--accent-soft);border-radius:8px;padding:.5rem .7rem;color:var(--accent-deep);}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);}
+table{border-collapse:collapse;width:100%;min-width:920px;font-size:.86rem;}
+th,td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+thead th{background:var(--accent-soft);color:var(--accent-deep);font-size:.78rem;position:sticky;top:0;}
+tbody tr:hover{background:#fcfcfa;}
+td.jobname{font-weight:800;white-space:nowrap;}
+.dots{letter-spacing:.12em;color:var(--accent);white-space:nowrap;font-size:.95rem;}
+.dots i{color:#d9d6cd;font-style:normal;}
+
+.quiz{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1.6rem;box-shadow:var(--shadow);}
+.q{margin-bottom:1.4rem;}
+.q p{margin:0 0 .6rem;font-weight:700;font-size:.98rem;}
+.q p b{color:var(--accent);margin-right:.4rem;}
+.opts{display:flex;gap:.5rem;flex-wrap:wrap;}
+.opts button{border:1.5px solid var(--line);background:var(--paper);border-radius:10px;padding:.55rem 1rem;font-size:.88rem;cursor:pointer;font-family:inherit;color:var(--ink-soft);font-weight:600;text-align:left;}
+.opts button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.quiz-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;}
+#result{margin-top:1.4rem;display:none;}
+#result.show{display:block;}
+.rescard{background:var(--accent-soft);border-radius:12px;padding:1.1rem 1.3rem;margin-bottom:.7rem;}
+.rescard .rank{font-size:.75rem;font-weight:800;letter-spacing:.08em;color:var(--accent);}
+.rescard h4{margin:.2rem 0 .3rem;font-size:1.12rem;}
+.rescard p{margin:0 0 .6rem;font-size:.9rem;color:var(--ink-soft);}
+.rescard a{font-size:.85rem;font-weight:700;}
+.note{font-size:.82rem;color:var(--ink-faint);margin-top:.8rem;}
+
+.axis{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:1.1rem 1.3rem;margin-bottom:.9rem;box-shadow:var(--shadow);}
+.axis h4{margin:0 0 .35rem;font-size:1.02rem;}
+.axis h4 b{color:var(--blue);margin-right:.4rem;}
+.axis p{margin:0 0 .6rem;font-size:.92rem;color:var(--ink-soft);}
+.axis .ask{font-size:.86rem;background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:.55rem .8rem;font-weight:600;}
+
+.checklist{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.5rem;box-shadow:var(--shadow);}
+.checklist label{display:flex;gap:.7rem;align-items:flex-start;padding:.55rem 0;border-bottom:1px dotted var(--line);cursor:pointer;font-size:.93rem;}
+.checklist label:last-child{border-bottom:none;}
+.checklist input{margin-top:.45rem;width:1.05em;height:1.05em;accent-color:var(--accent);flex:none;}
+.checklist .sub{display:block;font-size:.82rem;color:var(--ink-faint);font-weight:400;}
+.checklist input:checked + span{color:var(--ink-faint);text-decoration:line-through;}
+
+footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0 3rem;font-size:.82rem;color:var(--ink-faint);}
+footer h4{font-size:.85rem;color:var(--ink-soft);margin:0 0 .5rem;}
+footer ul{margin:0 0 1.2rem;padding-left:1.1rem;}
+footer li{margin-bottom:.2rem;}
+footer a{color:var(--ink-soft);}
+
+@media print{
+  .topbar,.filters,.quiz-actions,.hero-cta{display:none;}
+  .job-body{display:block !important;}
+  .ratio{display:none;}
+  body{font-size:11pt;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">接客販売職<span>まるわかり</span>ナビ</div>
+    <nav class="navlinks">
+      <a href="#map">全体地図</a>
+      <a href="#gyotai">業態のちがい</a>
+      <a href="#zukan">職種図鑑</a>
+      <a href="#baito">バイトとの違い</a>
+      <a href="#real">働き方のリアル</a>
+      <a href="#career">キャリアの伸びしろ</a>
+      <a href="#hikaku">比較表</a>
+      <a href="#shindan">診断</a>
+      <a href="#erabikata">選び方</a>
+      <a href="#check">求人票チェック</a>
+      <a href="#kigyo">実在企業</a>
+    </nav>
+    <div class="zoomctl">
+      <span>文字</span>
+      <button data-zoom="normal" aria-pressed="true">標準</button>
+      <button data-zoom="big" aria-pressed="false">大</button>
+      <button data-zoom="huge" aria-pressed="false">特大</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">学生のための 接客販売職ガイド</div>
+  <h1>接客販売は、<br><em>アルバイトの延長ではありません。</em></h1>
+  <p>
+    レジを打つ、商品を渡す、笑顔で挨拶する——それはこの仕事の<strong>入口の部分</strong>です。
+    社員として働く販売職には、売上をつくる責任、在庫を回す判断、後輩を育てる役割があります。
+    このページでは9つの接客販売職を動画と1日の流れで見たうえで、働き方のリアルと、その先に伸びるキャリアまで確認します。
+  </p>
+  <div class="hero-cta">
+    <a class="btn" href="#zukan">職種図鑑を見る</a>
+    <a class="btn ghost" href="#baito">バイトとの違いを見る</a>
+  </div>
+
+  <div class="strip">
+    <h4>こんな理由で志望先を決めていませんか？</h4>
+    <ul>
+      <li>アパレルのバイトが楽しかったから、アパレルの正社員も楽しいはず</li>
+      <li>人と話すのが好きだから、接客業なら何でも向いていると思う</li>
+      <li>「販売職はきつい」と聞くけれど、<strong>何がきついのかは知らない</strong></li>
+      <li>店長になる以外に、どんな道があるのか思いつかない</li>
+    </ul>
+    <div class="fix">
+      → 好きという気持ちは出発点として正しい。あとは<strong>仕事の中身と条件を知ったうえで選ぶ</strong>だけです。
+    </div>
+  </div>
+</header>
+
+<section id="map">
+  <h2><span class="num">MAP</span>接客販売職の全体地図</h2>
+  <p class="lead">
+    接客販売は「何を売っているか」で仕事の質が大きく変わります。この3タイプで整理すると、求人票の職種名が読めるようになります。
+  </p>
+  <div class="mapgrid">
+    <div class="mapcard m1">
+      <div class="who">TYPE 1｜モノを売る</div>
+      <h4>商品知識で信頼を得て、選ぶ手伝いをする</h4>
+      <p>お客様は「買うもの」を求めて来店します。商品の知識と提案力が価値になり、売上目標という形で成果が数字に出ます。</p>
+      <div class="jobs"><span>アパレル販売</span><span>美容部員</span><span>ドラッグストア</span><span>家電・携帯</span><span>自動車ディーラー</span></div>
+    </div>
+    <div class="mapcard m2">
+      <div class="who">TYPE 2｜体験を売る</div>
+      <h4>過ごす時間そのものをつくる</h4>
+      <p>お客様は「時間」を買いに来ます。形のないサービスが商品なので、段取り力とチーム連携が仕事の質を決めます。</p>
+      <div class="jobs"><span>ホテルフロント</span><span>ブライダル</span><span>レストラン</span></div>
+    </div>
+    <div class="mapcard m3">
+      <div class="who">TYPE 3｜店をつくる</div>
+      <h4>売場・人・数字をまとめて預かる</h4>
+      <p>接客の先にあるポジション。売上、シフト、在庫、教育まで担当する、店という小さな会社の責任者です。</p>
+      <div class="jobs"><span>店長・店舗マネージャー</span><span>スーパーバイザー</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ 業態のちがい ============ -->
+<section id="gyotai">
+  <h2><span class="num">GYOTAI</span>業態で、接客販売はここまで違う</h2>
+  <p class="lead">
+    求人票では同じ「販売スタッフ」と書かれていても、<strong>何を売る店かによって、1日に会う人数も、一人にかける時間も、覚える知識も別物</strong>です。
+    まず3つの対比で違いの構造をつかみ、そのあと12業態の早見表で確認してください。
+  </p>
+
+  <div class="vs-cap">対比 1 ｜ 単価と回転（1日に何人に会うか）</div>
+  <div class="vs">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">低単価・高回転</div><div class="b">高単価・低回転</div></div>
+    <div class="vs-row"><div class="lbl">代表例</div><div class="a" data-l="低単価">食品スーパー、ドラッグストア、コンビニ、飲食チェーン</div><div class="b" data-l="高単価">自動車、宝飾、家具、ブライダル、住宅設備</div></div>
+    <div class="vs-row"><div class="lbl">1日に会う人数</div><div class="a" data-l="低単価">数十〜数百人。名前は覚えきれない</div><div class="b" data-l="高単価">数人〜十数人。一人ひとりの顔と事情を覚える</div></div>
+    <div class="vs-row"><div class="lbl">一人にかける時間</div><div class="a" data-l="低単価">数十秒〜数分。レジと案内が中心</div><div class="b" data-l="高単価">1時間〜数か月。何度も来店してもらって決まる</div></div>
+    <div class="vs-row"><div class="lbl">覚える商品知識</div><div class="a" data-l="低単価">点数が多く、入れ替わりも速い。広く浅く</div><div class="b" data-l="高単価">点数は少ないが、仕様・法規・資金面まで深く</div></div>
+    <div class="vs-row"><div class="lbl">成果の出方</div><div class="a" data-l="低単価">1日・1週間の売上として、すぐ数字に出る</div><div class="b" data-l="高単価">1件が大きく、決まらない月もある</div></div>
+    <div class="vs-row"><div class="lbl">きつさの正体</div><div class="a" data-l="低単価">体力と処理スピード。立ち止まる時間がない</div><div class="b" data-l="高単価">一件の重さ。断られたときのダメージが大きい</div></div>
+  </div>
+
+  <div class="vs-cap">対比 2 ｜ どこで売るか（立地と業態）</div>
+  <div class="vs three">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">百貨店・商業施設</div><div class="b">路面店・専門店</div><div class="c">郊外大型店・量販店</div></div>
+    <div class="vs-row"><div class="lbl">営業時間</div><div class="a" data-l="商業施設">施設の時間に従う。10時〜20時が多い</div><div class="b" data-l="路面店">ブランドが決める。夜遅い店もある</div><div class="c" data-l="量販店">朝早く夜遅い。年中無休の店も多い</div></div>
+    <div class="vs-row"><div class="lbl">客層</div><div class="a" data-l="商業施設">施設が集めた客。ついで来店が多い</div><div class="b" data-l="路面店">目的を持って来る。ブランドのファン</div><div class="c" data-l="量販店">地域の生活者。家族連れが多い</div></div>
+    <div class="vs-row"><div class="lbl">売場の裁量</div><div class="a" data-l="商業施設">施設と本部のルールが多く、自由度は低め</div><div class="b" data-l="路面店">陳列も販促も店で決められる余地が大きい</div><div class="c" data-l="量販店">本部の指示が基本。売場面積は広い</div></div>
+    <div class="vs-row"><div class="lbl">同僚の数</div><div class="a" data-l="商業施設">1店舗に数名。少人数で回す</div><div class="b" data-l="路面店">数名〜十数名</div><div class="c" data-l="量販店">社員＋アルバイトで数十名</div></div>
+    <div class="vs-row"><div class="lbl">通勤と異動</div><div class="a" data-l="商業施設">駅近が多く通いやすい。施設の出店に伴う異動</div><div class="b" data-l="路面店">店舗数が少なく、異動先も限られる</div><div class="c" data-l="量販店">車通勤が前提の立地も。エリア内異動が多い</div></div>
+  </div>
+
+  <div class="vs-cap">対比 3 ｜ 数字のかかり方</div>
+  <div class="vs">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">個人売上目標がある</div><div class="b">店舗目標のみ</div></div>
+    <div class="vs-row"><div class="lbl">多い業態</div><div class="a" data-l="個人目標">アパレル、化粧品、自動車、宝飾、通信</div><div class="b" data-l="店舗目標">食品スーパー、飲食、ドラッグストア、ホテル</div></div>
+    <div class="vs-row"><div class="lbl">評価</div><div class="a" data-l="個人目標">自分の数字がそのまま評価になる</div><div class="b" data-l="店舗目標">店の結果と、働き方・育成への貢献で見られる</div></div>
+    <div class="vs-row"><div class="lbl">給与への反映</div><div class="a" data-l="個人目標">インセンティブや歩合が乗る会社がある</div><div class="b" data-l="店舗目標">固定給が中心。賞与に店舗成績が反映される</div></div>
+    <div class="vs-row"><div class="lbl">チームの空気</div><div class="a" data-l="個人目標">同僚が競争相手になることがある</div><div class="b" data-l="店舗目標">助け合いが前提。手が空いたら他を手伝う</div></div>
+    <div class="vs-row"><div class="lbl">向いている人</div><div class="a" data-l="個人目標">自分の成果がはっきり見えるほうが燃える</div><div class="b" data-l="店舗目標">みんなで回す働き方のほうが力を出せる</div></div>
+  </div>
+
+  <h3>12業態 早見表｜接客販売の中身はこう変わる</h3>
+  <p class="lead" style="margin-bottom:1rem">
+    志望業態が決まっていない人は、この表で「自分が受け入れられそうな行」を探すところから始めてください。横にスクロールできます。
+  </p>
+  <div class="tablewrap">
+    <table id="gyoTable">
+      <thead>
+        <tr>
+          <th>業態</th><th>何を売る</th><th>客単価の目安</th><th>主な客層</th>
+          <th>働く時間の特徴</th><th>身につく専門性</th><th>この業態ならではの特徴</th>
+        </tr>
+      </thead>
+      <tbody id="gyoBody"></tbody>
+    </table>
+  </div>
+  <p class="note">※ 同じ業態でも、会社の規模や店舗の立地で実態は変わります。この表は「面接で何を質問すべきか」を考えるための出発点として使ってください。</p>
+</section>
+
+<section id="zukan">
+  <h2><span class="num">ZUKAN</span>職種図鑑｜9つの接客販売職</h2>
+  <p class="lead">
+    カードをクリックすると、仕事の中身・1日の流れ・使うツール・向き不向き・キャリアパス・<strong>紹介動画</strong>が開きます。
+    動画は厚生労働省の職業情報提供サイト（job tag）公式動画です。
+  </p>
+  <div class="filters" id="filters"></div>
+  <div class="jobs-list" id="jobsList"></div>
+</section>
+
+<section id="baito">
+  <h2><span class="num">DIFF</span>アルバイトと正社員は、何が違うのか</h2>
+  <p class="lead">
+    同じ売場に立っていても、任される範囲がまったく違います。<strong>ここを知らずに入社すると「思っていたのと違う」が起きます。</strong>
+  </p>
+  <div class="vs">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a" data-l="アルバイト">アルバイト</div><div class="b" data-l="正社員">正社員（販売職）</div></div>
+    <div class="vs-row"><div class="lbl">担当する範囲</div><div class="a" data-l="アルバイト">シフトに入った時間の、決められた作業</div><div class="b" data-l="正社員">店の営業時間すべて。自分がいない時間も含めて結果を負う</div></div>
+    <div class="vs-row"><div class="lbl">売上への責任</div><div class="a" data-l="アルバイト">基本的に負わない</div><div class="b" data-l="正社員">個人目標・店舗目標があり、達成状況が毎日・毎月確認される</div></div>
+    <div class="vs-row"><div class="lbl">シフト</div><div class="a" data-l="アルバイト">希望を出す側</div><div class="b" data-l="正社員">組む側。人が足りなければ自分が埋める</div></div>
+    <div class="vs-row"><div class="lbl">在庫・発注</div><div class="a" data-l="アルバイト">品出しや検品を手伝う</div><div class="b" data-l="正社員">何をいくつ仕入れるか判断する。売れ残りも欠品も自分の責任</div></div>
+    <div class="vs-row"><div class="lbl">人の育成</div><div class="a" data-l="アルバイト">教わる側</div><div class="b" data-l="正社員">アルバイトを採用し、教え、評価する側になる</div></div>
+    <div class="vs-row"><div class="lbl">クレーム対応</div><div class="a" data-l="アルバイト">社員に引き継ぐ</div><div class="b" data-l="正社員">引き継がれる側。最終的な判断をする</div></div>
+    <div class="vs-row"><div class="lbl">給与のしくみ</div><div class="a" data-l="アルバイト">時給。働いた時間の分だけ</div><div class="b" data-l="正社員">月給＋賞与。店舗成績や個人成績で変動する会社もある</div></div>
+    <div class="vs-row"><div class="lbl">勤務地</div><div class="a" data-l="アルバイト">その店舗のみ</div><div class="b" data-l="正社員">異動・転勤がある会社が多い（範囲は会社により大きく違う）</div></div>
+    <div class="vs-row"><div class="lbl">数年後</div><div class="a" data-l="アルバイト">辞めれば経験は残るが、肩書きは残らない</div><div class="b" data-l="正社員">副店長・店長・本部と、任される範囲が段階的に広がる</div></div>
+  </div>
+  <p class="note">
+    ※ アルバイト経験は決して無駄になりません。ただし面接では「バイトで何をしたか」ではなく、
+    <strong>「正社員として何を任されたいか」</strong>を聞かれます。この表の右側の言葉で語れるようにしておきましょう。
+  </p>
+</section>
+
+<section id="real">
+  <h2><span class="num">REAL</span>働き方のリアル｜先に知っておくこと</h2>
+  <p class="lead">
+    ここは求人票の良い面だけでは見えない部分です。<strong>知ったうえで選べば、続けられます。</strong>知らずに入ると、早期離職の原因になります。
+  </p>
+  <div class="realgrid">
+    <div class="realcard">
+      <h4>休みは平日。土日祝は基本、出勤</h4>
+      <p>お客様が来るときが営業のピークです。土日祝・大型連休・年末年始が最も忙しく、その時期に休みは取りにくくなります。</p>
+      <div class="tip"><b>確認する問い：</b>土日の休みは月に何日取れますか？ 大型連休中の勤務はどうなりますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>シフト制。生活リズムは一定ではない</h4>
+      <p>早番・遅番の交代制が基本。ホテルや一部のドラッグストアには夜勤もあります。友人や家族と予定を合わせにくくなります。</p>
+      <div class="tip"><b>確認する問い：</b>シフトのパターンは何種類ありますか？ 何日前に確定しますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>立ち仕事。体力は思っている以上に要る</h4>
+      <p>一日の大半を立って過ごします。繁忙期はほとんど座れません。品出しで重い荷物を運ぶ職種もあります。</p>
+      <div class="tip"><b>確認する問い：</b>休憩は何分ですか？ バックヤードで座れる時間はありますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>売上目標がついて回る</h4>
+      <p>個人目標のある会社と、店舗目標のみの会社があります。達成度が評価や給与に反映される度合いも会社ごとに違います。</p>
+      <div class="tip"><b>確認する問い：</b>個人目標はありますか？ 未達の場合、評価にどう影響しますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>異動・転勤の範囲を必ず確認する</h4>
+      <p>チェーン展開している企業では異動が前提です。「全国転勤あり」「エリア限定」「店舗固定」で、生活設計はまったく変わります。</p>
+      <div class="tip"><b>確認する問い：</b>転勤の範囲はどこまでですか？ エリア限定の勤務地選択制度はありますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>感情を使う仕事だと理解しておく</h4>
+      <p>気分が乗らない日でも笑顔が求められ、理不尽な言葉を受けることもあります。切り替える方法を自分で持てるかが、続くかどうかを分けます。</p>
+      <div class="tip"><b>確認する問い：</b>クレームが起きたとき、社員一人で抱えない仕組みはありますか？</div>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <h2><span class="num">NEXT</span>キャリアの伸びしろ｜販売職のその先</h2>
+  <p class="lead">
+    「ずっと売場に立ち続けるのか」と不安になる人が多い職種ですが、実際は<strong>数年単位で任される範囲が変わっていきます。</strong>
+  </p>
+  <div class="ladder">
+    <div class="step">
+      <div class="yr">1〜2年目</div>
+      <h4>販売スタッフ</h4>
+      <p>接客と商品知識を身につける時期。まずは「自分が売る」ことに集中し、店の一日の流れを体で覚える。</p>
+    </div>
+    <div class="step">
+      <div class="yr">3〜5年目</div>
+      <h4>サブチーフ・副店長</h4>
+      <p>発注、シフト作成、新人教育を任され始める。自分が売るだけでなく<strong>「売れる仕組みをつくる」</strong>側へ移る。</p>
+    </div>
+    <div class="step">
+      <div class="yr">5〜8年目</div>
+      <h4>店長</h4>
+      <p>売上・人・在庫のすべてに責任を持つ。一店舗の経営を任される、販売職のキャリアの中心的なポジション。</p>
+    </div>
+    <div class="step">
+      <div class="yr">8年目〜</div>
+      <h4>SV・エリアマネージャー</h4>
+      <p>複数店舗を統括し、店長を育てる立場へ。ここから本部職への道が具体的に開ける。</p>
+    </div>
+  </div>
+
+  <h3 style="font-size:1.08rem;margin:2rem 0 .7rem">売場の経験が、そのまま武器になる本部職</h3>
+  <div class="branch">
+    <div class="brcard">
+      <h4>バイヤー・商品部</h4>
+      <p>何を仕入れ、いくらで売るかを決める仕事。<strong>「何が売れて何が売れ残るか」を売場で見てきた経験が直接効く</strong>ため、販売出身者が多い。</p>
+    </div>
+    <div class="brcard">
+      <h4>販促・VMD・マーケティング</h4>
+      <p>売場づくりやキャンペーンを企画する仕事。店頭でお客様の反応を見てきた感覚が、企画の精度を左右する。</p>
+    </div>
+    <div class="brcard">
+      <h4>人事・教育（トレーナー）</h4>
+      <p>新人研修や接客指導を担当。店長としてスタッフを育てた経験が、そのまま職務経歴になる。</p>
+    </div>
+    <div class="brcard">
+      <h4>法人営業・メーカー営業</h4>
+      <p>商品知識と提案経験を活かし、店舗から取引先相手の営業職へ。家電・化粧品・自動車などで実例が多い。</p>
+    </div>
+    <div class="brcard">
+      <h4>他業界への転用</h4>
+      <p>接客で培った「初対面の相手の要望を引き出す力」は、営業・受付・カウンター業務など幅広い職種で評価される。</p>
+    </div>
+    <div class="brcard">
+      <h4>独立・開業</h4>
+      <p>特に飲食・美容・小規模小売では、店長経験を経て自分の店を持つ道がある。数字と人の管理を実地で学べる点が強み。</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2><span class="num">SKILL</span>どの接客販売職にも共通する6つの力</h2>
+  <p class="lead">職種が違っても評価される力は共通しています。ここは<strong>面接で語れる自分の強み</strong>に直結します。</p>
+  <div class="skillgrid">
+    <div class="skillcard">
+      <div class="ic">👂</div>
+      <h4>聞き出す力</h4>
+      <p>お客様は自分の欲しいものを言葉にできていないことが多い。質問しながら本当の希望に近づける力が、提案の質を決めます。</p>
+      <div class="ex">語れる経験例：バイトで「どちらがいいですか」と選択肢を出して迷いを解いた場面</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">📚</div>
+      <h4>商品・サービスの知識</h4>
+      <p>好きなだけでは提案できません。特徴、他社との違い、使い方まで説明できて初めて信頼されます。新商品が出るたび覚え直しが続きます。</p>
+      <div class="ex">語れる経験例：バイト先の商品を自分から調べて覚えた、後輩に説明できるようにした</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">📊</div>
+      <h4>数字を読む力</h4>
+      <p>売上、客数、客単価、在庫回転。<strong>「なぜ今日は売れなかったか」を数字で説明できる人が店長に上がります。</strong></p>
+      <div class="ex">目安：日商簿記3級、販売士3級。Excelで表とグラフが作れると強い</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🏃</div>
+      <h4>体力と自己管理</h4>
+      <p>立ち仕事、不規則なシフト、繁忙期の連勤。技術以前に、体調を保てることが続けるための前提になります。</p>
+      <div class="ex">意識すること：睡眠時間の確保、休日の過ごし方、無理をしない伝え方</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🤝</div>
+      <h4>チームで動く力</h4>
+      <p>売場は一人では回りません。厨房、バックヤード、他部署と声を掛け合い、手が空いたら助けに行ける人が信頼されます。</p>
+      <div class="ex">語れる経験例：忙しい時間帯に自分から役割を見つけて動いた場面</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🔄</div>
+      <h4>切り替える力</h4>
+      <p>断られる、叱られる、売れない日がある。そこで止まらず次のお客様に向き合えるかどうかが、この仕事を長く続けられるかを分けます。</p>
+      <div class="ex">語れる経験例：うまくいかなかった経験から、次にどう変えたか</div>
+    </div>
+  </div>
+</section>
+
+<section id="hikaku">
+  <h2><span class="num">HIKAKU</span>9職種ひと目で比較</h2>
+  <p class="lead">●が多いほどその要素が強いという目安です（会社の規模や業態で変わります）。横にスクロールできます。</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>職種</th><th>接客の深さ</th><th>売上目標の重さ</th><th>専門知識の必要度</th>
+          <th>勤務時間の不規則さ</th><th>未経験からの入りやすさ</th><th>主な勤務先</th><th>代表的な資格</th>
+        </tr>
+      </thead>
+      <tbody id="cmpBody"></tbody>
+    </table>
+  </div>
+  <p class="note">「接客の深さ」＝お客様一人にかける時間の長さ。深いほど、じっくり関係を築く仕事です。</p>
+</section>
+
+<section id="shindan">
+  <h2><span class="num">CHECK</span>かんたん適性診断</h2>
+  <p class="lead">5つの質問に答えると、相性が良さそうな職種を3つ表示します。<strong>答えを決めるものではなく、調べる方向を絞る道具</strong>として使ってください。</p>
+  <div class="quiz">
+    <div id="quizBody"></div>
+    <div class="quiz-actions">
+      <button class="btn" id="calcBtn">結果を見る</button>
+      <button class="btn ghost" id="resetBtn">やり直す</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</section>
+
+<section id="erabikata">
+  <h2><span class="num">AXIS</span>企業・職種を選ぶ6つの軸</h2>
+  <p class="lead">
+    同じ「販売職」でも、会社によって働き方はまったく違います。ブランドの知名度ではなく、この6つで比べてください。
+  </p>
+
+  <div class="axis">
+    <h4><b>軸1</b>何を売る仕事か（商材）</h4>
+    <p>単価が安く回転が速い商品（食品・日用品）は、多くのお客様とテンポよく接します。単価が高い商品（車・宝飾・住宅）は、一人に長い時間をかけて信頼を築きます。どちらの接客が自分に合うかで、疲れ方も達成感も変わります。</p>
+    <div class="ask">自問：たくさんの人と短く関わりたい？ 少数の人と深く関わりたい？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸2</b>売上目標のかかり方</h4>
+    <p>個人目標がある会社、店舗目標のみの会社、目標が評価に直結する会社としない会社があります。数字が力になる人もいれば、負担になる人もいます。<strong>良し悪しではなく、自分がどちらで力を発揮するか</strong>で選んでください。</p>
+    <div class="ask">確認する問い：個人目標はありますか？ 達成度は給与や評価にどう反映されますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸3</b>教育体制と、一人前になるまでの道筋</h4>
+    <p>研修が整っている会社と、いきなり売場に立たせる会社があります。特に短大卒・新卒であれば、<strong>最初の1年をどう育ててもらえるか</strong>がその後の伸びを大きく左右します。</p>
+    <div class="ask">確認する問い：入社後の研修はどのくらいありますか？ 新人には教育担当がつきますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸4</b>勤務地と異動の範囲</h4>
+    <p>全国転勤、エリア限定、店舗固定。同じ会社でもコース別採用で分かれていることがあります。実家から通いたい、将来この地域で暮らしたいという希望があるなら、<strong>入社前に必ず確認すべき最重要項目</strong>です。</p>
+    <div class="ask">確認する問い：転勤の範囲はどこまでですか？ 勤務地限定の制度はありますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸5</b>長く働いている人がいるか</h4>
+    <p>接客販売は離職率が高いと言われる分野ですが、<strong>会社によって大きく差があります。</strong>30代・40代の社員がどんな働き方をしているかは、自分の10年後の姿そのものです。産休・育休からの復帰実績も見ておきましょう。</p>
+    <div class="ask">確認する問い：入社5年以上の方はどのくらいいますか？ 育休から復帰された方はいますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸6</b>ECが伸びる中で、店舗に何を求めているか</h4>
+    <p>ネット通販が広がっても、店舗は「試せる・相談できる・体験できる」場として残ります。むしろ<strong>提案や接客の価値は高まっています。</strong>逆に、レジ打ちや在庫確認は自動化が進みます。会社が店舗をどう位置づけているかを聞いてください。</p>
+    <div class="ask">確認する問い：ECと店舗の役割をどう分けていますか？ 販売員がSNSや接客提案に関わる機会はありますか？</div>
+  </div>
+</section>
+
+<section id="check">
+  <h2><span class="num">LIST</span>求人票で必ず見るチェックリスト</h2>
+  <p class="lead">応募前・面接前にこの10項目を確認しましょう。埋まらない項目が、そのまま質問すべきことになります。</p>
+  <div class="checklist">
+    <label><input type="checkbox"><span>「販売スタッフ」の中身が具体的に書かれているか<span class="sub">接客だけか、発注・シフト・教育まで含むかで仕事量が大きく違う</span></span></label>
+    <label><input type="checkbox"><span>年間休日日数（105日／110日／120日）<span class="sub">数字が書かれていない求人は、面接で必ず確認する</span></span></label>
+    <label><input type="checkbox"><span>シフトのパターンと、実際の勤務時間<span class="sub">早番・遅番・夜勤の有無、閉店後の作業時間が含まれているか</span></span></label>
+    <label><input type="checkbox"><span>転勤・異動の範囲（全国／エリア限定／店舗固定）<span class="sub">生活設計に直結する。曖昧な表現なら必ず質問する</span></span></label>
+    <label><input type="checkbox"><span>個人売上目標の有無と、評価への反映<span class="sub">インセンティブ制度がある場合は、その計算方法まで聞く</span></span></label>
+    <label><input type="checkbox"><span>固定残業代（みなし残業）が含まれているか<span class="sub">「月給◯万円（固定残業◯時間分を含む）」の表記を見落とさない</span></span></label>
+    <label><input type="checkbox"><span>入社後の研修期間と内容<span class="sub">新卒でいきなり売場に一人で立たせる会社かどうかが分かる</span></span></label>
+    <label><input type="checkbox"><span>店長になるまでの平均年数と、その後のポスト<span class="sub">キャリアの道筋が用意されているかを確認する</span></span></label>
+    <label><input type="checkbox"><span>制服・身だしなみ規定と、自社商品の購入義務<span class="sub">アパレル・美容部員では実質的な支出になる場合がある</span></span></label>
+    <label><input type="checkbox"><span>店舗見学ができるか、実際の社員と話せるか<span class="sub">お客さんとして一度その店に行ってみるのが最も正直な情報源</span></span></label>
+  </div>
+</section>
+
+
+<!-- ============ 実在企業 ============ -->
+<section id="kigyo">
+  <h2><span class="num">REAL</span>実際に、こんな企業がある</h2>
+  <p class="lead">
+    同じ「販売」でも、売るものも客層も働く時間も会社によって違います。
+    ここまでで気になった<strong>業態</strong>を手がかりに、実際の企業を見てください。関西の大学の公開就職実績に載っている企業です。
+    <strong>知らない会社ほど、調べる価値があります。</strong>
+  </p>
+  <div class="comp-tools">
+    <div class="comp-row" id="compCat"><b>業種</b></div>
+    <div class="comp-row" id="compSize"><b>規模</b></div>
+    <div class="comp-row"><b>検索</b><input class="comp-search" id="compQ" type="search" placeholder="企業名・事業内容で絞り込む" aria-label="企業名・事業内容で絞り込む"></div>
+  </div>
+  <p class="comp-count" id="compCount"></p>
+  <div class="comp-grid" id="compGrid"></div>
+  <div class="comp-more"><button class="btn ghost" id="compMore">さらに20社見る</button></div>
+  <p class="note">
+    出典は各大学が公開している就職実績です。<strong>掲載されていることは、その企業が今も募集していることや、特定の職種で採用があることを意味しません。</strong>
+    必ず各社の採用情報で最新の内容を確認してください。規模区分（大手・中堅・地域）は、事業の展開範囲をもとにした教材上のおおまかな目安です。
+  </p>
+</section>
+
+<footer>
+  <h4>参考・出典</h4>
+  <ul>
+    <li>厚生労働省 職業情報提供サイト（日本版O-NET）「job tag」 <a href="https://shigoto.mhlw.go.jp/" target="_blank" rel="noopener">https://shigoto.mhlw.go.jp/</a></li>
+    <li>厚生労働省公式YouTubeチャンネル 職業紹介動画（事務・営業販売・サービス系プレイリスト） <a href="https://www.youtube.com/playlist?list=PLMG33RKISnWgIokWgBFwUxRs_966FZyef" target="_blank" rel="noopener">プレイリストを見る</a></li>
+    <li>各職種の業務内容・1日の流れは、job tag の職業解説および一般的な実務例をもとに教材用に再構成したものです。実際の業務・勤務条件は企業や店舗によって大きく異なります。</li>
+  </ul>
+  <p>本ページは学生のキャリア教育用教材です。動画は各配信者の権利物であり、YouTube の埋め込み機能により表示しています。</p>
+</footer>
+
+</div>
+
+<script>
+const JOBS = [
+  {
+    id:"apparel", icon:"👗", name:"アパレル販売員",
+    catch:"「似合う」を一緒に見つけ、ブランドの世界観を店頭で体現する",
+    tags:["モノを売る","トレンド感覚","未経験から入りやすい"],
+    cats:["all","mono"],
+    who:"来店するお客様・ブランド",
+    duties:[
+      "お客様への声かけ、要望のヒアリング、コーディネートの提案",
+      "試着の案内、サイズ・在庫の確認と取り寄せ手配",
+      "レジ会計、ラッピング、顧客カードへの登録",
+      "商品の陳列変更（VMD）、マネキンの着せ替え",
+      "入荷商品の検品・値札付け、バックヤードの在庫整理、棚卸し",
+      "SNSやスタッフアプリにコーディネートを投稿する"
+    ],
+    day:[
+      ["9:30","出勤、着替え。朝礼で前日の売上と本日の目標を共有"],
+      ["10:00","開店準備。店内清掃、商品の整理、マネキンの確認"],
+      ["10:30","開店。接客とレジ対応"],
+      ["13:00","交代で休憩"],
+      ["14:00","入荷商品の検品・値札付け、バックヤード整理"],
+      ["16:00","夕方の来店ピーク。接客に集中"],
+      ["18:00","SNS用のコーディネート撮影・投稿"],
+      ["20:00","閉店作業、レジ締め、売上報告"],
+      ["20:45","退勤（早番・遅番のシフト制）"]
+    ],
+    tools:["POSレジ","タブレット在庫検索","スタッフアプリ","Instagram","顧客管理システム"],
+    good:["服やトレンドが好きで、人に似合うものを考えるのが楽しい","初対面の人に自分から声をかけられる","立ち仕事でも体力が続く"],
+    hard:["個人・店舗の売上目標があり、達成度が数字で常に見える","土日祝・年末年始は基本的に出勤。休みは平日","一日中立ち仕事で、繁忙期はほとんど座れない"],
+    quals:["販売士（リテールマーケティング）3級","接客サービスマナー検定","色彩検定（歓迎）"],
+    path:["販売スタッフ","サブチーフ・店長候補","店長","エリアマネージャー／本部（バイヤー・VMD・PR）"],
+    videos:[
+      {id:"4JbbgsxsO2M", title:"衣料品販売（job tag 職業紹介動画）", src:"厚生労働省", point:"「服が好き」だけでは務まらない部分に注目。在庫管理や陳列など、接客以外の業務がどれくらいあるか数えてみよう。"}
+    ]
+  },
+  {
+    id:"biyo", icon:"💄", name:"美容部員（ビューティーアドバイザー）",
+    catch:"肌に触れ、悩みを聞き、その人の「なりたい」を形にする",
+    tags:["モノを売る","専門知識が積み上がる","研修が手厚い"],
+    cats:["all","mono","shikaku"],
+    who:"化粧品を買いに来るお客様・ブランド",
+    duties:[
+      "カウンセリング（肌の悩み・希望・普段の使い方をヒアリングする）",
+      "タッチアップ（実際にメイクをしながら商品を提案する）",
+      "商品説明、スキンケアの手順やコツをアドバイスする",
+      "レジ会計、顧客カルテの記録と管理",
+      "既存のお客様へDM・電話・LINEで新商品やイベントを案内する",
+      "カウンターの清掃、テスターの補充と衛生管理"
+    ],
+    day:[
+      ["9:00","出勤。自社ブランドのメイクを施し、身だしなみを整える"],
+      ["9:30","朝礼。売上目標と新商品情報の共有"],
+      ["10:00","開店。カウンセリングとタッチアップ"],
+      ["12:30","交代で休憩"],
+      ["13:30","接客を継続しながら、顧客カルテを記録する"],
+      ["16:00","新商品の研修、接客ロールプレイング"],
+      ["17:00","既存のお客様へ案内連絡（DM・LINE）"],
+      ["19:30","閉店作業、テスター清掃、売上報告"],
+      ["20:00","退勤（商業施設の営業時間に合わせたシフト制）"]
+    ],
+    tools:["POSレジ","顧客カルテ管理システム","肌診断機器","タブレット","LINE公式アカウント"],
+    good:["メイクやスキンケアが好きで、学び続けられる","人の話をじっくり聞ける","自分の見た目を整えることが苦にならない"],
+    hard:["身だしなみ規定が厳しく、常に自社ブランドのメイクが求められる","個人売上目標があり、達成へのプレッシャーがある","立ち仕事で、商業施設内のため土日祝は基本出勤"],
+    quals:["日本化粧品検定 2級・3級","販売士3級","メイクセラピー検定（歓迎）"],
+    path:["美容部員","チーフ・店長","エリア教育担当（トレーナー）","本社（商品企画・マーケティング）"],
+    videos:[
+      {id:"AAP-M25aqdQ", title:"化粧品販売／美容部員（job tag 職業紹介動画）", src:"厚生労働省", point:"「メイクをしてあげる仕事」ではなく「悩みを聞いて提案する仕事」であることに注目。カウンセリングにどれだけ時間をかけているか見てみよう。"}
+    ]
+  },
+  {
+    id:"drug", icon:"💊", name:"ドラッグストア店員・登録販売者",
+    catch:"資格を取れば、薬を売れる。生活に一番近い専門職",
+    tags:["モノを売る","資格が武器になる","求人が多い"],
+    cats:["all","mono","shikaku"],
+    who:"体調に不安のあるお客様・地域の生活者",
+    duties:[
+      "一般用医薬品（第2類・第3類）を販売し、使い方や注意点を説明する",
+      "症状をヒアリングして商品を提案する。必要なら受診をすすめる",
+      "品出し、陳列、発注、在庫と使用期限の管理",
+      "レジ会計、ポイントカードや処方箋受付の案内",
+      "販促POPの作成、季節に合わせた売場づくり",
+      "登録販売者資格の勉強（入社後に取得するケースが多い）"
+    ],
+    day:[
+      ["9:00","出勤。前日の売上を確認し、朝礼"],
+      ["9:30","開店準備。品出し、使用期限のチェック"],
+      ["10:00","開店。レジ・接客・医薬品の相談対応"],
+      ["12:00","交代で休憩"],
+      ["13:00","納品対応、検品、バックヤード整理"],
+      ["15:00","発注業務、売場のPOP作成"],
+      ["17:00","夕方の来店ピーク。レジ応援に入る"],
+      ["19:00","遅番へ引き継ぎ、日報作成"],
+      ["19:30","退勤（早番・遅番のシフト制。24時間営業の店舗もある）"]
+    ],
+    tools:["POSレジ","発注端末","医薬品データベース","品出し用カート","電子薬歴（店舗による）"],
+    good:["資格を取って専門性を身につけたい","体調が悪い人に落ち着いて対応できる","品出しなど体を動かす作業も苦にならない"],
+    hard:["医薬品の知識は入社後も学び続ける必要がある","品出しや納品で重い箱を運ぶ場面が多い","登録販売者は販売従事登録に実務経験の要件があり、すぐ一人で売場に立てるわけではない"],
+    quals:["登録販売者（受験に学歴・実務要件なし・最重要）","販売士3級","日本化粧品検定（歓迎）"],
+    path:["店舗スタッフ","登録販売者として医薬品を担当","副店長・店長","エリアマネージャー／本部（商品部・教育）"],
+    videos:[
+      {id:"tfNa7F1IeDQ", title:"医薬品販売／登録販売者（job tag 職業紹介動画）", src:"厚生労働省", point:"登録販売者が「何を売ってよくて、何は薬剤師でないと売れないか」に注目。資格の価値がどこにあるか分かる。"}
+    ]
+  },
+  {
+    id:"denki", icon:"📱", name:"家電・携帯ショップ販売員",
+    catch:"商品知識で信頼を得て、生活に合う一台を選ぶ手伝いをする",
+    tags:["モノを売る","説明力が命","知識が積み上がる"],
+    cats:["all","mono","shikaku"],
+    who:"家電・スマホを買いに来るお客様",
+    duties:[
+      "使い方や予算をヒアリングし、機種・商品を提案する",
+      "料金プラン、保証、下取りの内容を説明する（携帯ショップ）",
+      "契約手続き、初期設定、データ移行をサポートする",
+      "故障や使い方の相談に対応し、修理を受け付ける",
+      "商品の陳列、POP作成、在庫管理",
+      "メーカー研修に参加し、新商品の知識を習得する"
+    ],
+    day:[
+      ["9:30","出勤、朝礼。新商品とキャンペーン情報の共有"],
+      ["10:00","開店。来店受付、順番の管理"],
+      ["10:30","接客。ヒアリング → 提案 → 契約手続き"],
+      ["13:00","交代で休憩"],
+      ["14:00","契約書類の確認、不備のチェック"],
+      ["15:00","使い方相談、初期設定のサポート"],
+      ["17:00","夕方の来店ピーク。接客に集中"],
+      ["19:00","閉店作業、書類整理、日報作成"],
+      ["19:45","退勤（シフト制）"]
+    ],
+    tools:["契約管理システム","POSレジ","在庫検索端末","タブレット","メーカー資料"],
+    good:["機械やガジェットに興味がある","難しいことをかみ砕いて説明するのが得意","年配のお客様にも根気強く付き合える"],
+    hard:["商品と料金プランが頻繁に変わり、覚え直しが続く","契約手続きは書類の不備が許されず、1件に時間がかかる","「説明が分からない」と苦情になることがあり、忍耐が要る"],
+    quals:["家電製品アドバイザー","販売士3級","携帯キャリアの社内認定資格（入社後）"],
+    path:["販売スタッフ","主任・副店長","店長","エリアマネージャー／メーカー営業・法人営業"],
+    videos:[
+      {id:"P-WMx60wGpQ", title:"電器店店員（job tag 職業紹介動画）", src:"厚生労働省", point:"商品知識をどこで身につけているかに注目。「詳しくなること」自体が仕事の一部になっている。"},
+      {id:"m79ePaMGNik", title:"携帯電話販売（job tag 職業紹介動画）", src:"厚生労働省", point:"販売よりも契約手続きとアフターサポートの比重が大きい点を確認。同じ販売職でも家電とどう違うか比べてみよう。"}
+    ]
+  },
+  {
+    id:"dealer", icon:"🚗", name:"自動車ディーラー（カーセールス）",
+    catch:"人生で二番目に高い買い物を、何年もかけて一緒に決める",
+    tags:["モノを売る","高額商材","長く関係を築く"],
+    cats:["all","mono","manage"],
+    who:"車を買う・持ち続けるお客様",
+    duties:[
+      "来店客への接客、試乗の案内、車種やグレードを提案する",
+      "見積書の作成、下取り査定、ローンや保険の説明",
+      "契約手続き、登録書類の準備、納車の対応",
+      "納車後のフォロー（点検・車検の案内、乗り換えの提案）",
+      "既存のお客様への定期連絡、来店イベントの案内",
+      "展示車の清掃、ショールームの整備"
+    ],
+    day:[
+      ["9:00","出勤、朝礼。来店予約と本日の商談を確認"],
+      ["9:30","ショールームと展示車の清掃・準備"],
+      ["10:00","開店。来店客の接客、試乗対応"],
+      ["12:00","交代で休憩"],
+      ["13:00","見積の作成、ローン審査の手続き"],
+      ["15:00","納車対応（機能の説明と引き渡し）"],
+      ["16:30","既存のお客様へフォロー連絡、点検の案内"],
+      ["18:30","商談記録の入力、翌日の準備"],
+      ["19:00","退勤（土日が繁忙。定休日は平日）"]
+    ],
+    tools:["顧客管理（CRM）システム","見積システム","下取り査定システム","タブレット","試乗車"],
+    good:["車が好きで、知識を深めるのが楽しい","一度きりでなく、長く関係を築くのが好き","断られても引きずらず、次に切り替えられる"],
+    hard:["明確な販売台数目標があり、達成状況が常に見える","土日祝が最も忙しく、平日休みが基本","契約に至るまで数ヶ月かかることも珍しくない"],
+    quals:["普通自動車運転免許（必須）","自動車保険募集人資格（入社後に取得）","中古自動車査定士"],
+    path:["セールススタッフ","主任・チーフ","店長","エリアマネージャー／本部（商品企画・研修）"],
+    videos:[
+      {id:"4RUhhNW09JM", title:"ディーラー（job tag 職業紹介動画）", src:"厚生労働省", point:"「売って終わり」ではなく、点検・車検・乗り換えまで関係が続くことに注目。他の販売職との違いが見えてくる。"}
+    ]
+  },
+  {
+    id:"hotel", icon:"🛎️", name:"ホテル・旅館フロント",
+    catch:"到着から出発まで、滞在の入口と出口をすべて引き受ける",
+    tags:["体験を売る","シフト制","語学が活きる"],
+    cats:["all","taiken"],
+    who:"宿泊するお客様・館内の各部署",
+    duties:[
+      "チェックイン・チェックアウトの手続き、鍵の受け渡し",
+      "予約の確認・変更・キャンセル対応、客室の割り当て",
+      "会計処理、請求書の発行、両替の対応",
+      "館内や観光地の案内、レストラン・タクシーの手配",
+      "電話・メールでの問い合わせ対応（外国語の場合もある）",
+      "清掃部門やレストランとの連絡調整、苦情の一次対応"
+    ],
+    day:[
+      ["8:45","出勤、引き継ぎ。当日の到着・出発と特記事項を確認"],
+      ["9:00","チェックアウト対応のピーク"],
+      ["11:00","客室の準備状況を清掃部門と確認、部屋割りを調整"],
+      ["12:00","交代で休憩"],
+      ["13:00","予約対応、電話・メールの返信、館内案内"],
+      ["15:00","チェックイン開始。到着ラッシュ"],
+      ["18:00","レストランや観光の手配、問い合わせ対応"],
+      ["20:00","夜勤担当へ引き継ぎ、退勤（早番・遅番・夜勤のシフト制）"]
+    ],
+    tools:["宿泊管理システム（PMS）","予約サイト管理画面","POSレジ","インカム","翻訳ツール"],
+    good:["人をもてなすことに喜びを感じる","複数のことを同時に処理できる","英語など語学を活かしたい"],
+    hard:["早番・遅番・夜勤のシフト制で、生活リズムが不規則になる","年末年始や大型連休が最繁忙期で、休みが取れない","クレームの一次対応を担うことが多く、精神的な負荷がある"],
+    quals:["英語（TOEIC600点〜が目安）","ホテルビジネス実務検定","サービス接遇検定"],
+    path:["フロントスタッフ","主任・チーフ","フロントマネージャー","支配人／本部（予約センター・営業）"],
+    videos:[
+      {id:"Mr3HnKfWh_g", title:"フロント（ホテル・旅館）（job tag 職業紹介動画）", src:"厚生労働省", point:"フロントが「受付」だけでなく、清掃・レストランなど館内の各部署をつなぐハブになっている点に注目。"}
+    ]
+  },
+  {
+    id:"bridal", icon:"💐", name:"ブライダルコーディネーター",
+    catch:"一生に一度の日を、半年から一年かけて一緒につくる",
+    tags:["体験を売る","段取り力","土日が本番"],
+    cats:["all","taiken"],
+    who:"結婚する二人とその家族",
+    duties:[
+      "会場見学の案内、見積の提示、成約に向けた提案（営業の側面）",
+      "打ち合わせ（日程・料理・装花・衣装・演出・当日の進行）",
+      "見積の更新と管理、支払いスケジュールの説明",
+      "花・写真・衣装・音響などパートナー企業との調整",
+      "挙式当日の進行管理、司会やスタッフへの指示",
+      "招待状や席次表など、新郎新婦の準備をサポートする"
+    ],
+    day:[
+      ["11:00","出勤。当日の打ち合わせと見学予約を確認"],
+      ["11:30","会場見学の案内、初回相談（成約に向けた提案）"],
+      ["13:30","休憩"],
+      ["14:30","打ち合わせ①（料理と装花を決定、見積を更新）"],
+      ["16:30","打ち合わせ②（当日の進行を確認）"],
+      ["18:30","パートナー企業との連絡調整、見積・書類の作成"],
+      ["20:00","退勤（土日は挙式本番で朝から夜まで。休みは平日）"]
+    ],
+    tools:["顧客管理システム","見積作成システム","進行表（Excel）","提案資料","インカム"],
+    good:["人の人生の節目に立ち会う仕事に魅力を感じる","細かい段取りを組むのが得意","相手の言葉にならない希望をくみ取れる"],
+    hard:["土日祝が本番で平日休み。友人と予定が合わせにくい","成約に向けた営業目標があり、「決めてもらう」プレッシャーがある","やり直しがきかない一日を任されるため、当日まで気が抜けない"],
+    quals:["アシスタント・ブライダル・コーディネーター（ABC）検定","サービス接遇検定","色彩検定（歓迎）"],
+    path:["見学案内・アシスタント","プランナー（担当を持つ）","チーフプランナー","支配人／本部（企画・研修）"],
+    videos:[
+      {id:"wuFsdYzeIUw", title:"ブライダルコーディネーター（job tag 職業紹介動画）", src:"厚生労働省", point:"「当日の仕事」より「半年〜1年の打ち合わせ」が本体であることに注目。華やかさの裏にある調整業務の量を見よう。"}
+    ]
+  },
+  {
+    id:"resto", icon:"🍽️", name:"レストランホールスタッフ",
+    catch:"料理が届くまでの時間ごと、店の空気をつくる",
+    tags:["体験を売る","チームで動く","未経験から入りやすい"],
+    cats:["all","taiken"],
+    who:"来店するお客様・厨房スタッフ",
+    duties:[
+      "予約の受付と管理、席の割り当て",
+      "お客様の案内、オーダーの受付、料理と飲み物の提供",
+      "メニューやワインの説明、おすすめの提案",
+      "会計、テーブルのセッティングと片付け",
+      "店内の清掃、備品と食器の管理",
+      "アルバイトスタッフへの指示・教育、シフト作成（社員の場合）"
+    ],
+    day:[
+      ["9:30","出勤。仕込みの状況、本日の予約とコース内容を共有"],
+      ["10:00","開店準備。清掃、テーブルセッティング"],
+      ["11:30","ランチ営業開始。案内・オーダー・提供・会計"],
+      ["14:30","ランチ締め、片付け、休憩"],
+      ["17:00","ディナー準備。予約の再確認、席のレイアウト変更"],
+      ["18:00","ディナー営業。接客に集中"],
+      ["22:00","閉店作業、レジ締め、翌日の準備"],
+      ["22:45","退勤（シフト制。通し勤務や中抜けの店舗もある）"]
+    ],
+    tools:["POSレジ・ハンディ端末","予約管理システム","インカム","シフト管理アプリ"],
+    good:["チームで動くのが好きで、声を掛け合える","忙しい時間帯にリズムよく動ける","料理やお酒に興味がある"],
+    hard:["営業時間が長く、夜遅い勤務や通し勤務がある","土日祝・年末年始が繁忙期で休みにくい","立ち仕事で移動量が多く、体力の消耗が大きい"],
+    quals:["レストランサービス技能検定（国家資格）","食品衛生責任者","ソムリエ／ワインエキスパート（歓迎）"],
+    path:["ホールスタッフ","チーフ・副店長","店長","複数店舗のマネージャー／独立開業"],
+    videos:[
+      {id:"oCz51dWnnPI", title:"ホールスタッフ（レストラン）（job tag 職業紹介動画）", src:"厚生労働省", point:"「料理を運ぶ仕事」ではなく、店全体の流れを見て動く仕事であることに注目。厨房との連携の取り方を見よう。"}
+    ]
+  },
+  {
+    id:"tencho", icon:"⭐", name:"店長・店舗マネージャー",
+    catch:"売上・人・在庫。店という小さな会社を一つ任される",
+    tags:["店をつくる","数字の責任","販売キャリアの中心"],
+    cats:["all","manage"],
+    who:"店舗スタッフ・本部・地域のお客様",
+    duties:[
+      "売上と利益を管理し、予算達成に向けた施策を立てる",
+      "スタッフの採用、シフト作成、教育、評価を行う",
+      "発注と在庫の管理、ロス（廃棄・欠品）を減らす",
+      "売場づくり、販促の企画と実施",
+      "クレームの最終対応、本部への報告",
+      "自らも売場に立って接客する"
+    ],
+    day:[
+      ["8:30","出勤。前日の売上と在庫データを確認、本日の目標を設定"],
+      ["9:00","朝礼。目標と重点商品をスタッフに共有"],
+      ["9:30","発注業務、本部への報告書作成"],
+      ["11:00","売場に立って接客、スタッフの動きを確認"],
+      ["13:00","休憩"],
+      ["14:00","スタッフ面談、シフト作成、新人教育"],
+      ["16:00","売場の変更、販促の準備"],
+      ["18:00","夕方のピークに売場へ。クレーム対応"],
+      ["19:30","日報作成、翌日の指示出し、退勤"]
+    ],
+    tools:["売上分析システム","発注端末","シフト管理システム","Excel","本部報告フォーマット"],
+    good:["数字を見て打ち手を考えるのが面白い","人を育てることにやりがいを感じる","責任のある立場を任されたい"],
+    hard:["売上未達の責任を直接負う立場になる","スタッフの欠勤や退職の穴を、自分が埋めることになりがち","労務管理（残業・シフト）の知識と配慮が常に求められる"],
+    quals:["販売士（リテールマーケティング）2級","食品衛生責任者","日商簿記3級（数字に強くなる）"],
+    path:["販売スタッフ","副店長","店長","スーパーバイザー・エリアマネージャー／本部"],
+    videos:[
+      {id:"NEKERXjESBY", title:"スーパー店長（job tag 職業紹介動画）", src:"厚生労働省", point:"「接客」より「管理」の比重が大きくなることに注目。数字とスタッフのどちらに時間を使っているか数えてみよう。"},
+      {id:"Z8G57987BQw", title:"ホテル・旅館支配人（job tag 職業紹介動画）", src:"厚生労働省", point:"業種が違っても「店・施設を預かる」仕事には共通点が多い。スーパー店長と比べながら見よう。"}
+    ]
+  }
+];
+
+const RELATED = [
+  {name:"ツアーコンダクター", id:"jyIa3M3vsh8"},
+  {name:"観光バスガイド", id:"ghaUHk1BEoY"},
+  {name:"ペットショップ店員", id:"zGa8WyHgDr0"}
+];
+
+/* [接客の深さ, 売上目標の重さ, 専門知識, 勤務時間の不規則さ, 未経験からの入りやすさ] */
+const CMP = {
+  apparel:{v:[4,4,2,3,5], ind:"商業施設・路面店", q:"販売士3級"},
+  biyo:   {v:[5,4,4,3,4], ind:"百貨店・化粧品専門店", q:"日本化粧品検定"},
+  drug:   {v:[3,3,5,4,5], ind:"ドラッグストア", q:"登録販売者"},
+  denki:  {v:[4,4,4,3,4], ind:"家電量販店・携帯ショップ", q:"家電製品アドバイザー"},
+  dealer: {v:[5,5,3,2,3], ind:"カーディーラー", q:"普通自動車免許"},
+  hotel:  {v:[4,2,3,5,4], ind:"ホテル・旅館", q:"TOEIC／ホテル実務検定"},
+  bridal: {v:[5,4,3,3,3], ind:"結婚式場・専門式場", q:"ABC検定"},
+  resto:  {v:[3,2,2,5,5], ind:"レストラン・飲食店", q:"レストランサービス技能検定"},
+  tencho: {v:[3,5,4,4,1], ind:"全業種の店舗", q:"販売士2級"}
+};
+
+const QUIZ = [
+  {
+    q:"お客様と接する時間は、どちらが理想？",
+    opts:[
+      {t:"一人にじっくり時間をかけて向き合いたい", s:{biyo:3, dealer:3, bridal:3, hotel:1}},
+      {t:"たくさんの人とテンポよく関わりたい", s:{apparel:3, resto:3, drug:3, denki:1}},
+      {t:"接客もするが、店全体を動かすことに関心がある", s:{tencho:4, denki:1, dealer:1}}
+    ]
+  },
+  {
+    q:"「売上目標」について、正直どう感じる？",
+    opts:[
+      {t:"目標があったほうが燃える", s:{dealer:3, apparel:2, tencho:3, biyo:2}},
+      {t:"数字より、お客様の満足を優先したい", s:{hotel:3, resto:3, drug:2, bridal:1}},
+      {t:"数字は得意ではないが、必要なら向き合う", s:{drug:2, denki:2, apparel:1, resto:1}}
+    ]
+  },
+  {
+    q:"どんな知識を身につけたい？",
+    opts:[
+      {t:"資格として形に残る知識", s:{drug:4, hotel:2, resto:2}},
+      {t:"商品やトレンドについての知識", s:{apparel:3, biyo:3, denki:3}},
+      {t:"人を動かし、店を回すための知識", s:{tencho:4, dealer:1, bridal:1}}
+    ]
+  },
+  {
+    q:"働く時間帯と休みについて、正直なところは？",
+    opts:[
+      {t:"夜勤や遅い時間も含めて、柔軟に対応できる", s:{hotel:4, resto:4, drug:2}},
+      {t:"平日休みでいいので、日中に働きたい", s:{apparel:3, biyo:3, dealer:3, denki:3}},
+      {t:"土日に本番が来る働き方でも構わない", s:{bridal:4, dealer:2, tencho:1}}
+    ]
+  },
+  {
+    q:"どんな相手の役に立てたとき、一番うれしい？",
+    opts:[
+      {t:"悩みを抱えて来た人", s:{biyo:4, drug:3, denki:2}},
+      {t:"特別な日を迎える人", s:{bridal:4, hotel:3}},
+      {t:"楽しい時間を過ごしに来た人", s:{resto:4, apparel:2}},
+      {t:"一緒に働く仲間", s:{tencho:4, hotel:1}}
+    ]
+  }
+];
+
+
+/* ========== 商材プロフィール ========== */
+const SPEC = {
+  apparel:{uru:"衣料品・ファッション雑貨", kyaku:"10〜40代の一般客", tanka:"数千〜数万円", jikan:"商業施設の時間に合わせたシフト"},
+  biyo:   {uru:"化粧品・スキンケア",       kyaku:"20〜60代の女性が中心", tanka:"数千〜数万円", jikan:"百貨店の営業時間。土日祝出勤"},
+  drug:   {uru:"医薬品・日用品・食品",     kyaku:"地域の生活者全般",   tanka:"数百〜数千円", jikan:"早番遅番。深夜営業の店も"},
+  denki:  {uru:"家電・通信回線・付帯サービス", kyaku:"家族連れから高齢者まで", tanka:"数千〜数十万円", jikan:"土日祝が繁忙。年末年始が山"},
+  dealer: {uru:"自動車・保険・車検",       kyaku:"購入・買い替えを検討する個人", tanka:"100万〜数百万円", jikan:"土日祝が本番。平日休み"},
+  hotel:  {uru:"宿泊と滞在時間",           kyaku:"旅行者・ビジネス客・外国人", tanka:"1万〜数万円", jikan:"早番・遅番・夜勤の交代制"},
+  bridal: {uru:"結婚式という一日",         kyaku:"挙式を控えたカップルと家族", tanka:"200万〜400万円", jikan:"土日祝に打ち合わせと本番"},
+  resto:  {uru:"料理と食事の時間",         kyaku:"一般客・家族・宴会",  tanka:"千〜数千円",   jikan:"昼夜の二部制。夜が遅い"},
+  tencho: {uru:"店の売上そのもの",         kyaku:"店に来るすべての客",  tanka:"業態による",   jikan:"開店前から閉店後まで"}
+};
+
+/* ========== 12業態 早見表 ========== */
+const GYOTAI = [
+ {name:"アパレル（専門店・商業施設）", type:"k", uru:"衣料品と服飾雑貨", tanka:"数千〜数万円",
+  kyaku:"10〜40代。ついで来店も多い", jikan:"商業施設の営業時間。土日祝が繁忙",
+  senmon:"トレンド理解、コーディネート提案、売場づくり",
+  feat:"個人売上目標がある会社が多い。自社商品の購入が実質的な支出になる場合がある"},
+ {name:"化粧品（百貨店カウンター）", type:"k", uru:"化粧品とスキンケア", tanka:"数千〜数万円",
+  kyaku:"20〜60代の女性が中心", jikan:"百貨店の営業時間。土日祝出勤",
+  senmon:"肌の知識、カウンセリング、メイク技術",
+  feat:"身だしなみ規定が厳しく、勤務中は常に自社ブランドのメイクが求められる"},
+ {name:"ドラッグストア", type:"k", uru:"医薬品・化粧品・日用品・食品", tanka:"数百〜数千円",
+  kyaku:"地域の生活者全般", jikan:"早番遅番。深夜営業の店舗もある",
+  senmon:"登録販売者の資格、市販薬の知識",
+  feat:"資格を取ると任される範囲と手当が変わる。品出しなど体力を使う作業も多い"},
+ {name:"家電量販店", type:"t", uru:"家電・PC・通信回線", tanka:"数千〜数十万円",
+  kyaku:"家族連れから高齢者まで幅広い", jikan:"土日祝が繁忙。年末年始が最繁忙",
+  senmon:"製品スペックの理解、回線や保険などの付帯提案",
+  feat:"商品の入れ替わりが速く覚え直しが続く。メーカー派遣の販売員と並んで売場に立つ"},
+ {name:"携帯ショップ", type:"t", uru:"通信回線・端末・付帯サービス", tanka:"月額の契約が中心",
+  kyaku:"全世代。高齢者への説明も多い", jikan:"店舗の営業時間。土日祝が繁忙",
+  senmon:"料金プランと契約手続き、通信の基礎知識",
+  feat:"販売よりも契約手続きとアフター対応の比重が大きい。制度改定が頻繁で学び直しが続く"},
+ {name:"自動車ディーラー", type:"t", uru:"自動車・保険・車検", tanka:"100万〜数百万円",
+  kyaku:"購入や買い替えを検討する個人と法人", jikan:"土日祝が本番。平日休み",
+  senmon:"車の知識、ローン・保険・税金",
+  feat:"売った後も車検・保険・乗り換えで担当が続き、顧客リストが自分の財産になる"},
+ {name:"食品スーパー", type:"k", uru:"生鮮・惣菜・加工食品", tanka:"数百〜数千円",
+  kyaku:"地域の生活者。日常の買い物客", jikan:"朝が早い。年中無休が基本",
+  senmon:"鮮度管理、発注、売場づくり、部門の運営",
+  feat:"青果・鮮魚・惣菜など部門ごとの専門性が育つ。転勤範囲が狭い会社もある"},
+ {name:"コンビニ（本部・スーパーバイザー）", type:"k", uru:"加盟店の経営支援", tanka:"店舗の日商で見る",
+  kyaku:"加盟店オーナーと店舗スタッフ", jikan:"担当店舗を巡回。土日も連絡が入る",
+  senmon:"店舗経営の指導、発注と販促のデータ分析",
+  feat:"自分は売場に立たず、オーナーに動いてもらう立場。「教える・支える」側の仕事"},
+ {name:"ホテル・旅館", type:"t", uru:"宿泊と滞在時間", tanka:"1万〜数万円",
+  kyaku:"旅行者、ビジネス客、外国人", jikan:"早番・遅番・夜勤の交代制",
+  senmon:"接遇、予約管理、語学",
+  feat:"24時間動く施設なので生活リズムが不規則。英語力が直接評価される場面が多い"},
+ {name:"ブライダル（結婚式場）", type:"t", uru:"結婚式という一日", tanka:"200万〜400万円",
+  kyaku:"挙式を控えたカップルとその家族", jikan:"土日祝に打ち合わせと本番。平日休み",
+  senmon:"進行管理、見積りづくり、多職種の調整",
+  feat:"打ち合わせが半年〜1年続く。やり直しのきかない一日を預かる緊張感がある"},
+ {name:"飲食チェーン", type:"k", uru:"料理と食事の時間", tanka:"千〜数千円",
+  kyaku:"一般客、家族、宴会", jikan:"昼と夜の二部制。夜が遅い",
+  senmon:"調理とホールの両方、原価と人件費の管理",
+  feat:"早い段階で店長を任される会社が多い。独立を目指す人の入口にもなる"},
+ {name:"専門小売（宝飾・家具・スポーツ）", type:"t", uru:"趣味性や耐久性の高い商品", tanka:"数万〜数十万円",
+  kyaku:"目的を持って来店する客", jikan:"商業施設や路面店の営業時間",
+  senmon:"商品の専門知識、修理やメンテナンスの案内",
+  feat:"来店数は少なく、一人にじっくり時間をかける。知識の深さが信頼に直結する"}
+];
+function renderGyotai(){
+  document.getElementById("gyoBody").innerHTML = GYOTAI.map(g=>`
+    <tr>
+      <td class="gyoname">${g.name}<br><span class="tagS ${g.type==="k"?"t-kaiten":"t-tanka"}">${g.type==="k"?"高回転型":"高単価型"}</span></td>
+      <td>${g.uru}</td><td>${g.tanka}</td><td>${g.kyaku}</td>
+      <td>${g.jikan}</td><td>${g.senmon}</td><td>${g.feat}</td>
+    </tr>`).join("");
+}
+
+const dots = n => '<span class="dots">' + '●'.repeat(n) + '<i>' + '●'.repeat(5-n) + '</i></span>';
+
+const FILTERS = [
+  {key:"all", label:"すべて（9職種）"},
+  {key:"mono", label:"モノを売る"},
+  {key:"taiken", label:"体験を売る"},
+  {key:"shikaku", label:"資格・専門知識が効く"},
+  {key:"manage", label:"マネジメントに進む"}
+];
+
+function renderFilters(){
+  document.getElementById("filters").innerHTML = FILTERS.map((f,i)=>
+    `<button class="chip" data-f="${f.key}" aria-pressed="${i===0}">${f.label}</button>`
+  ).join("");
+  document.querySelectorAll("#filters .chip").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      document.querySelectorAll("#filters .chip").forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true");
+      const k = b.dataset.f;
+      document.querySelectorAll(".job").forEach(j=>{
+        j.classList.toggle("hidden", !j.dataset.cats.split(",").includes(k));
+      });
+    });
+  });
+}
+
+function jobHTML(j){
+  return `
+  <article class="job" id="job-${j.id}" data-cats="${j.cats.join(",")}" open-state="0">
+    <div class="job-head" data-toggle="${j.id}">
+      <div class="job-badge">${j.icon}</div>
+      <div class="job-titles">
+        <h3>${j.name}</h3>
+        <div class="catch">${j.catch}</div>
+        <div class="job-tags">${j.tags.map(t=>`<span>${t}</span>`).join("")}</div>
+      </div>
+      <div class="toggle">くわしく見る <span class="arw">▾</span></div>
+    </div>
+    <div class="job-body">
+      ${SPEC[j.id]?`<div class="blk" style="margin-top:1.2rem">
+        <h5>▍商材プロフィール（この販売職の型）</h5>
+        <div class="spec">
+          <div class="specbox"><b>何を売る</b><span>${SPEC[j.id].uru}</span></div>
+          <div class="specbox"><b>主な客層</b><span>${SPEC[j.id].kyaku}</span></div>
+          <div class="specbox"><b>客単価の目安</b><span>${SPEC[j.id].tanka}</span></div>
+          <div class="specbox"><b>働く時間</b><span>${SPEC[j.id].jikan}</span></div>
+        </div>
+      </div>`:""}
+      <div class="split">
+        <div>
+          <div class="blk"><h5>▍誰を相手にする仕事か</h5><p>${j.who}</p></div>
+          <div class="blk"><h5>▍具体的にやること</h5><ul>${j.duties.map(d=>`<li>${d}</li>`).join("")}</ul></div>
+          <div class="blk"><h5>▍ある1日の流れ（例）</h5><ul class="timeline">${j.day.map(d=>`<li><span class="t">${d[0]}</span><span>${d[1]}</span></li>`).join("")}</ul></div>
+          <div class="blk"><h5>▍よく使うツール・機器</h5><div class="tools">${j.tools.map(t=>`<span>${t}</span>`).join("")}</div></div>
+          <div class="blk">
+            <h5>▍向き・大変さ</h5>
+            <div class="fit">
+              <div class="fitbox fit-good"><h6>こんな人に向く</h6><ul>${j.good.map(g=>`<li>${g}</li>`).join("")}</ul></div>
+              <div class="fitbox fit-hard"><h6>ここは覚悟が要る</h6><ul>${j.hard.map(h=>`<li>${h}</li>`).join("")}</ul></div>
+            </div>
+          </div>
+          <div class="blk"><h5>▍役立つ資格</h5><div class="tools">${j.quals.map(q=>`<span>${q}</span>`).join("")}</div></div>
+          <div class="blk"><h5>▍キャリアの伸ばし方</h5><div class="path">${j.path.map((p,i)=> (i? '<i>→</i>':'') + `<span>${p}</span>`).join("")}</div></div>
+        </div>
+        <div>
+          <div class="blk">
+            <h5>▍動画で見る</h5>
+            <div class="videos">
+              ${j.videos.map(v=>`
+                <div class="vid">
+                  <div class="vtitle">${v.title}</div>
+                  <div class="vmeta">出典：<b>${v.src}</b></div>
+                  <div class="ratio">
+                    <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${v.id}?rel=0"
+                      title="${v.title}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="vpoint"><b>見るポイント：</b>${v.point}</div>
+                </div>`).join("")}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderJobs(){
+  document.getElementById("jobsList").innerHTML = JOBS.map(jobHTML).join("") + `
+    <article class="job" data-cats="all,mono,taiken,shikaku,manage" open-state="0" id="job-related">
+      <div class="job-head" style="border-left-color:#7b8794">
+        <div class="job-badge" style="background:#eeece7">➕</div>
+        <div class="job-titles">
+          <h3>あわせて知っておきたい関連職種</h3>
+          <div class="catch">接客販売の求人でよく隣に並ぶ3つの職種</div>
+        </div>
+        <div class="toggle">くわしく見る <span class="arw">▾</span></div>
+      </div>
+      <div class="job-body">
+        <div class="blk" style="margin-top:1.2rem">
+          <h5>▍動画で見る</h5>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem">
+            ${RELATED.map(r=>`
+              <div class="vid">
+                <div class="vtitle">${r.name}（job tag 職業紹介動画）</div>
+                <div class="vmeta">出典：<b>厚生労働省</b></div>
+                <div class="ratio">
+                  <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${r.id}?rel=0"
+                    title="${r.name}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>`).join("")}
+          </div>
+        </div>
+      </div>
+    </article>`;
+
+  document.querySelectorAll(".job-head").forEach(h=>{
+    h.addEventListener("click", ()=>{
+      const art = h.closest(".job");
+      const open = art.getAttribute("open-state") === "1";
+      art.setAttribute("open-state", open ? "0" : "1");
+      h.querySelector(".toggle").firstChild.nodeValue = open ? "くわしく見る " : "閉じる ";
+    });
+  });
+}
+
+function renderCmp(){
+  document.getElementById("cmpBody").innerHTML = JOBS.map(j=>{
+    const c = CMP[j.id];
+    return `<tr>
+      <td class="jobname"><a href="#job-${j.id}" style="text-decoration:none">${j.icon} ${j.name}</a></td>
+      <td>${dots(c.v[0])}</td><td>${dots(c.v[1])}</td><td>${dots(c.v[2])}</td>
+      <td>${dots(c.v[3])}</td><td>${dots(c.v[4])}</td>
+      <td>${c.ind}</td><td>${c.q}</td>
+    </tr>`;
+  }).join("");
+}
+
+function renderQuiz(){
+  document.getElementById("quizBody").innerHTML = QUIZ.map((q,i)=>`
+    <div class="q" data-qi="${i}">
+      <p><b>Q${i+1}.</b>${q.q}</p>
+      <div class="opts">${q.opts.map((o,k)=>`<button data-qi="${i}" data-oi="${k}" aria-pressed="false">${o.t}</button>`).join("")}</div>
+    </div>`).join("");
+  document.querySelectorAll("#quizBody .opts button").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      document.querySelectorAll(`#quizBody .opts button[data-qi="${b.dataset.qi}"]`)
+        .forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true");
+    });
+  });
+}
+
+document.getElementById("calcBtn").addEventListener("click", ()=>{
+  const score = {};
+  JOBS.forEach(j=>score[j.id]=0);
+  let answered = 0;
+  document.querySelectorAll('#quizBody .opts button[aria-pressed="true"]').forEach(b=>{
+    answered++;
+    const s = QUIZ[+b.dataset.qi].opts[+b.dataset.oi].s;
+    for (const k in s) score[k] += s[k];
+  });
+  const res = document.getElementById("result");
+  if (answered === 0){
+    res.innerHTML = `<p class="note">まず質問に答えてみてください。</p>`;
+    res.classList.add("show"); return;
+  }
+  const top = Object.entries(score).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  res.innerHTML = `
+    <h4 style="margin:0 0 .7rem;font-size:1.05rem">あなたと相性がよさそうな職種</h4>
+    ${top.map(([id],i)=>{
+      const j = JOBS.find(x=>x.id===id);
+      return `<div class="rescard">
+        <div class="rank">${["最も相性が良さそう","次に見てみたい","こちらも候補に"][i]}</div>
+        <h4>${j.icon} ${j.name}</h4>
+        <p>${j.catch}</p>
+        <a href="#job-${j.id}" onclick="openJob('${j.id}')">→ この職種の詳細と動画を見る</a>
+      </div>`;
+    }).join("")}
+    ${answered < QUIZ.length ? `<p class="note">※ ${QUIZ.length}問中${answered}問の回答です。すべて答えると精度が上がります。</p>` : ""}
+    <p class="note">この結果は「向いていない職種を消す」ためのものではありません。上位に出た職種の動画を見て、<strong>働いている自分をイメージできるか</strong>で判断してください。</p>`;
+  res.classList.add("show");
+  res.scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+
+document.getElementById("resetBtn").addEventListener("click", ()=>{
+  document.querySelectorAll("#quizBody .opts button").forEach(b=>b.setAttribute("aria-pressed","false"));
+  const r = document.getElementById("result"); r.classList.remove("show"); r.innerHTML="";
+});
+
+function openJob(id){
+  document.querySelectorAll("#filters .chip").forEach((x,i)=>x.setAttribute("aria-pressed", i===0));
+  document.querySelectorAll(".job").forEach(j=>j.classList.remove("hidden"));
+  const art = document.getElementById("job-"+id);
+  if(!art) return;
+  art.setAttribute("open-state","1");
+  art.querySelector(".toggle").firstChild.nodeValue = "閉じる ";
+}
+window.openJob = openJob;
+
+document.querySelectorAll(".zoomctl button").forEach(b=>{
+  b.addEventListener("click", ()=>{
+    document.querySelectorAll(".zoomctl button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true");
+    document.documentElement.dataset.zoom = b.dataset.zoom;
+  });
+});
+
+renderGyotai();
+renderFilters();
+renderJobs();
+renderCmp();
+renderQuiz();
+
+/* ========== 実在企業 ========== */
+const COMPANIES=[["製造業","タカラスタンダード","ホーロー製のシステムキッチンや浴室など住宅設備の製造","大阪府大阪市","あり","大手"],["製造業","ワコール","女性用下着・インナーウェアの企画と製造","京都府京都市","あり","大手"],["製造業","ファンケル","無添加化粧品とサプリメントの製造・販売","神奈川県横浜市","あり","大手"],["製造業","住友大阪セメント","セメントと建材、光電子材料の製造","東京都千代田区","あり","大手"],["製造業","不二越","ベアリング、切削工具、産業用ロボットの製造","富山県富山市","あり","大手"],["製造業","リンナイ","給湯器、ガスコンロなど熱エネルギー機器の製造","愛知県名古屋市","あり","大手"],["製造業","文化シヤッター","シャッター、ドア、窓の製造と施工","東京都文京区","あり","大手"],["製造業","デサント","デサント、ルコックなどスポーツウェアの企画と製造","大阪府大阪市","あり","大手"],["製造業","GSユアサ","自動車用・産業用の蓄電池、リチウムイオン電池の製造","京都府京都市","あり","大手"],["製造業","NTN","軸受（ベアリング）と等速ジョイントの製造","大阪府大阪市","あり","大手"],["製造業","TMEIC","産業用の電機システム、モーター、インバータの製造","東京都中央区","あり","大手"],["製造業","いすゞ自動車","トラック・バスとディーゼルエンジンの製造","神奈川県横浜市","あり","大手"],["製造業","アイリスオーヤマ","生活用品・家電の企画から製造・販売までを一貫","宮城県仙台市","あり","大手"],["製造業","アマノ","就業管理システム、駐車場システム、環境機器の製造","神奈川県横浜市","あり","大手"],["製造業","エスケー化研","建築用の塗料・仕上塗材の製造","大阪府茨木市","あり","大手"],["製造業","オリエンタルモーター","小型モーターと駆動制御機器の製造","東京都台東区","あり","大手"],["製造業","カナデビア","環境プラント、機械、インフラ設備の製造（旧・日立造船）","大阪府大阪市","あり","大手"],["製造業","カヤバ","油圧機器、ショックアブソーバの製造（旧・KYB）","東京都港区","あり","大手"],["製造業","キヤノンメディカルシステムズ","CT・MRIなど医用画像診断装置の製造と販売","栃木県大田原市","あり","大手"],["製造業","グローリー","通貨処理機、自動釣銭機、認証システムの製造","兵庫県姫路市","あり","大手"],["製造業","コベルコ建機","油圧ショベル、クレーンなど建設機械の製造","東京都品川区","あり","大手"],["製造業","ゴールドウイン","ザ・ノース・フェイス等スポーツウェアの企画・製造・販売","富山県小矢部市","あり","大手"],["製造業","サッポロビール","ビール、RTDなど酒類の製造と販売","東京都渋谷区","あり","大手"],["製造業","サトー","バーコードプリンタ、ラベルなど自動認識機器の製造","東京都港区","あり","大手"],["製造業","シークス","電子機器の受託製造（EMS）とグローバル調達","大阪府大阪市","あり","大手"],["製造業","シャープ","家電、ディスプレイ、電子デバイスの製造","大阪府堺市","あり","大手"],["製造業","ジェイテクト","ステアリング、軸受、工作機械の製造","愛知県刈谷市","あり","大手"],["製造業","ジーシー","歯科材料・歯科機器の製造","東京都文京区","あり","大手"],["製造業","スズキ","自動車と二輪車の製造","静岡県浜松市","あり","大手"],["製造業","セガ","家庭用・アーケードゲームの開発と販売","東京都品川区","限定的","大手"],["製造業","ダイキン工業","空調機器、フッ素化学製品の製造","大阪府大阪市","あり","大手"],["製造業","ダイハツ工業","軽自動車を中心とした自動車の製造","大阪府池田市","あり","大手"],["製造業","テルモ","カテーテル、輸液ポンプなど医療機器の製造","東京都渋谷区","あり","大手"],["製造業","デンソー","自動車部品・電装システムの製造","愛知県刈谷市","あり","大手"],["製造業","ニコン","カメラ、半導体露光装置、測定機器の製造","東京都港区","限定的","大手"],["製造業","ニチアス","断熱材、シール材など工業用材料の製造","東京都中央区","あり","大手"],["製造業","フジパングループ本社","本仕込などパン・菓子の製造と販売","愛知県名古屋市","あり","大手"],["製造業","フランスベッド","ベッド、家具と介護用品の製造・レンタル","東京都新宿区","あり","大手"],["製造業","マツダ","自動車の製造","広島県安芸郡","あり","大手"],["製造業","ミネベアミツミ","ベアリング、電子部品、モーターの製造","東京都中央区","あり","大手"],["製造業","モリタホールディングス","消防車、防災機器の製造","大阪府大阪市","あり","大手"],["製造業","モンベル","アウトドア用品の企画・製造・販売","大阪府大阪市","あり","大手"],["製造業","ヤンマーホールディングス","農業機械、建設機械、産業用エンジンの製造","大阪府大阪市","あり","大手"],["製造業","リブドゥコーポレーション","大人用紙おむつなど医療・介護用品の製造","大阪府大阪市","あり","大手"],["製造業","三井化学","石油化学製品、機能性材料の製造","東京都中央区","あり","大手"],["製造業","三協立山","アルミ建材（サッシ・エクステリア）の製造","富山県高岡市","あり","大手"],["製造業","三和シヤッター工業","シャッター、ドア、間仕切りの製造と施工","東京都板橋区","あり","大手"],["製造業","三浦工業","産業用ボイラと水処理機器の製造・メンテナンス","愛媛県松山市","あり","大手"],["製造業","三菱製鋼","特殊鋼、ばね、素形材の製造","東京都中央区","あり","大手"],["製造業","三菱電機","重電、産業メカトロ、家電、電子デバイスの製造","東京都千代田区","あり","大手"],["製造業","不二製油","チョコレート用油脂、大豆素材など食品素材の製造","大阪府泉佐野市","あり","大手"],["製造業","丸大食品","ハム・ソーセージ、惣菜など食肉加工品の製造","大阪府高槻市","あり","大手"],["製造業","京セラ","セラミック部品、電子部品、通信機器の製造","京都府京都市","あり","大手"],["製造業","京セラドキュメントソリューションズ","複合機・プリンタの開発と製造","大阪府大阪市","あり","大手"],["製造業","伊藤園","お～いお茶など飲料の製造と販売","東京都渋谷区","あり","大手"],["製造業","住友電装","自動車用ワイヤーハーネス、電装部品の製造","三重県四日市市","あり","大手"],["製造業","大和製罐","飲料缶、食品缶など金属容器の製造","東京都千代田区","あり","大手"],["製造業","大塚製薬","医療用医薬品とポカリスエット等の栄養食品の製造","東京都千代田区","あり","大手"],["製造業","大陽日酸","産業ガス、医療ガスの製造と供給","東京都品川区","あり","大手"],["製造業","太平洋セメント","セメント、生コンクリート、資源の製造","東京都文京区","あり","大手"],["製造業","山崎製パン","食パン、菓子パン、和洋菓子の製造","東京都千代田区","あり","大手"],["製造業","帝人","炭素繊維、樹脂、ヘルスケア製品の製造","大阪府大阪市","あり","大手"],["製造業","日東工業","配電盤、キャビネットなど電気設備の製造","愛知県長久手市","あり","大手"],["製造業","日東電工","光学フィルム、テープなど機能性材料の製造","大阪府大阪市","あり","大手"],["製造業","明治","乳製品、菓子、栄養食品の製造","東京都中央区","あり","大手"],["製造業","村田製作所","セラミックコンデンサなど電子部品の製造","京都府長岡京市","あり","大手"],["製造業","東芝テック","POSシステム、複合機の製造","東京都品川区","あり","大手"],["製造業","森永乳業","牛乳、ヨーグルト、アイスなど乳製品の製造","東京都港区","あり","大手"],["製造業","矢崎総業","自動車用ワイヤーハーネス、計器類の製造","東京都港区","あり","大手"],["製造業","神戸製鋼所","鉄鋼、アルミ、機械、建設機械の製造","兵庫県神戸市","あり","大手"],["製造業","芝浦機械","射出成形機、工作機械の製造","静岡県沼津市","あり","大手"],["製造業","豊田自動織機","繊維機械、フォークリフト、自動車部品の製造","愛知県刈谷市","あり","大手"],["製造業","クリナップ","システムキッチンと洗面化粧台の製造","東京都荒川区","あり","中堅"],["製造業","アイコム","アマチュア無線機や業務用無線機の開発と製造","大阪府大阪市","あり","中堅"],["製造業","だいわ","","","あり","中堅"],["製造業","十川ゴム","産業用ゴムホースとゴム製品の製造","大阪府大阪市","あり","中堅"],["製造業","スワロー電機","変圧器（トランス）と電源機器の製造","大阪府大阪市","あり","中堅"],["製造業","友電舎","","","あり","中堅"],["製造業","日本特殊管製作所","特殊鋼管と配管部材の製造","大阪府","あり","中堅"],["製造業","コニシ","ボンドブランドの接着剤と建設用材料の製造","大阪府大阪市","あり","中堅"],["製造業","エレコム","PC周辺機器やスマホアクセサリの企画と販売","大阪府大阪市","あり","中堅"],["製造業","ナカバヤシ","アルバム、ファイルなど紙製品の製造と製本","大阪府大阪市","あり","中堅"],["製造業","永大産業","住宅用の床材、建具など内装建材の製造","大阪府大阪市","あり","中堅"],["製造業","佐藤薬品工業","医薬品と健康食品の受託製造","奈良県橿原市","あり","中堅"],["製造業","フルタ製菓","セコイヤチョコレートなど菓子の製造","大阪府大阪市","あり","中堅"],["製造業","アジュバンホールディングス","美容室向けのヘアケア・スキンケア製品の製造","兵庫県芦屋市","あり","中堅"],["製造業","リヒトラブ","ファイルやバインダーなど事務用品の製造","大阪府大阪市","あり","中堅"],["製造業","ジャクエツ","遊具・保育用品の製造と園の環境デザイン","福井県敦賀市","あり","中堅"],["製造業","ライオン事務器","オフィス家具と文具の製造・販売","東京都中央区","あり","中堅"],["製造業","コロンビアスポーツウェアジャパン","アウトドアウェアの日本での企画と販売","東京都港区","あり","中堅"],["製造業","AGC硝子建材","AGCグループの建築用ガラス・建材の販売","東京都千代田区","あり","中堅"],["製造業","TONE","トルクレンチなど作業工具の製造","大阪府河内長野市","あり","中堅"],["製造業","アイア","レディースアパレルの企画・製造・販売","東京都渋谷区","あり","中堅"],["製造業","ジェイテクトマシンシステム","工作機械と自動化装置の製造","","あり","中堅"],["製造業","スミノエインテリアプロダクツ","住江織物グループのインテリア製品の製造・販売","","あり","中堅"],["製造業","タイガー魔法瓶","魔法瓶、炊飯器など調理家電の製造","大阪府門真市","あり","中堅"],["製造業","デサントジャパン","デサント、ルコックなどスポーツウェアの企画・販売","東京都豊島区","あり","中堅"],["製造業","ニチレキグループ","道路舗装材料の製造と道路工事","東京都千代田区","あり","中堅"],["製造業","ネグロス電工","電設資材（配管・配線支持金具）の製造","大阪府大阪市","あり","中堅"],["製造業","パイン","パインアメなどキャンディの製造","大阪府大阪市","あり","中堅"],["製造業","ホギメディカル","手術用キット、不織布など医療用材料の製造","東京都港区","あり","中堅"],["製造業","マスプロ電工","アンテナ、受信システムなど電波機器の製造","愛知県日進市","あり","中堅"],["製造業","マリークヮントコスメチックス","英国発ブランドの化粧品の企画と販売","東京都港区","あり","中堅"],["製造業","メガチップス","LSI（システム半導体）の設計・開発","大阪府大阪市","あり","中堅"],["製造業","ヤーマン","美容機器、化粧品の開発と販売","東京都江東区","あり","中堅"],["製造業","ヨータイ","製鉄・セメント向け耐火物の製造","大阪府貝塚市","あり","中堅"],["製造業","ロックペイント","自動車補修用・建築用塗料の製造","大阪府大阪市","あり","中堅"],["製造業","三菱重工冷熱","業務用空調・冷熱設備の販売と施工","東京都千代田区","あり","中堅"],["製造業","味覚糖","ぷっちょ、e-maのど飴などの菓子の製造","大阪府大阪市","あり","中堅"],["製造業","大日本塗料","構造物用、工業用の塗料の製造","大阪府大阪市","あり","中堅"],["製造業","大阪チタニウムテクノロジーズ","スポンジチタン、高機能材料の製造","大阪府岸和田市","あり","中堅"],["製造業","寺崎電気産業","船舶用・産業用の配電制御機器の製造","大阪府大阪市","あり","中堅"],["製造業","島精機製作所","ホールガーメント横編機、デザインシステムの製造","和歌山県和歌山市","あり","中堅"],["製造業","日本伸銅","銅・銅合金の板や条の製造","大阪府堺市","あり","中堅"],["製造業","日鉄鋼板","屋根・壁材向けの表面処理鋼板の製造","東京都港区","あり","中堅"],["製造業","旭ダイヤモンド工業","ダイヤモンド工具、CBN工具の製造","東京都千代田区","あり","中堅"],["製造業","東リ","床材、カーテンなどインテリア建材の製造","兵庫県伊丹市","あり","中堅"],["製造業","東レ・メディカル","人工腎臓、透析装置など医療機器の販売とサービス","東京都中央区","あり","中堅"],["製造業","浅野歯車工作所","船舶用・産業用の歯車と減速機の製造","大阪府大阪市","あり","中堅"],["製造業","牛乳石鹸共進社","石鹸、ボディソープなど日用品の製造","大阪府大阪市","あり","中堅"],["製造業","創味食品","業務用・家庭用の調味料の製造","京都府京都市","あり","地域"],["製造業","日世","ソフトクリームのミックスとコーンの製造","大阪府茨木市","あり","地域"],["情報通信業","Sky","業務系ソフトとICT教育システムの開発","大阪府大阪市","あり","大手"],["情報通信業","トランス・コスモス","コールセンター運営とデジタルマーケティングの受託","東京都豊島区","あり","大手"],["情報通信業","キヤノンITソリューションズ","システム開発とITインフラの構築・運用","東京都港区","あり","大手"],["情報通信業","ダイワボウ情報システム","ITインフラ商材の卸と導入支援","大阪府大阪市","あり","大手"],["情報通信業","日本アイ・ビー・エムデジタルサービス","IBMグループのシステム運用とBPO","東京都中央区","あり","大手"],["情報通信業","JCOM","ケーブルテレビとインターネット、モバイルの提供","東京都千代田区","あり","大手"],["情報通信業","KDDI","auブランドの通信事業と法人向けソリューション","東京都千代田区","あり","大手"],["情報通信業","NECネクサソリューションズ","中堅・中小企業向けのITシステムの構築と運用","東京都港区","あり","大手"],["情報通信業","NECネッツエスアイ","ネットワークの構築と運用、オフィス環境の整備","東京都文京区","あり","大手"],["情報通信業","NECフィールディング","ITシステムの保守とヘルプデスク、運用支援","東京都港区","あり","大手"],["情報通信業","NTT西日本","西日本エリアの固定通信とICTソリューション","大阪府大阪市","あり","大手"],["情報通信業","USEN-NEXT HOLDINGS","店舗向けBGM・POSと動画配信U-NEXTの運営","東京都品川区","あり","大手"],["情報通信業","インターネットイニシアティブ","法人向けインターネット接続とネットワーク構築","東京都千代田区","あり","大手"],["情報通信業","エクシオグループ","通信インフラの設計・施工と都市インフラ整備","東京都渋谷区","あり","大手"],["情報通信業","ソフトバンク","携帯通信事業と法人向けのDXソリューション","東京都港区","あり","大手"],["情報通信業","テクノプロ・IT","IT技術者の派遣と受託開発","東京都港区","あり","大手"],["情報通信業","ミライト・ワン","通信建設。情報通信インフラの設計・施工","東京都江東区","あり","大手"],["情報通信業","三菱電機ソフトウエア","三菱電機グループのソフトウェア開発","東京都中央区","あり","大手"],["情報通信業","伊藤忠テクノソリューションズ","大手SIer。インフラ構築とシステム開発","東京都港区","あり","大手"],["情報通信業","富士ソフト","独立系の大手SIer。組込みから業務系まで開発","神奈川県横浜市","あり","大手"],["情報通信業","帝国データバンク","企業信用調査と企業情報データベースの提供","東京都港区","あり","大手"],["情報通信業","日本コムシス","通信建設。通信インフラと社会インフラの構築","東京都品川区","あり","大手"],["情報通信業","日本放送協会","NHK。公共放送の番組制作と送出","東京都渋谷区","あり","大手"],["情報通信業","CTCシステムマネジメント","ITインフラの運用・保守とヘルプデスク","東京都豊島区","あり","中堅"],["情報通信業","NTTデータ・ビジネス・システムズ","中堅企業向けの基幹システムの構築と運用","東京都江東区","限定的","中堅"],["情報通信業","ソフトウェア・サービス","医療機関向けの電子カルテシステムの開発","大阪府大阪市","あり","中堅"],["情報通信業","EMシステムズ","調剤薬局や医療機関向けシステムの開発","大阪府大阪市","あり","中堅"],["情報通信業","ニーズウェル","業務システムの受託開発と運用","東京都千代田区","あり","中堅"],["情報通信業","NSW","製造業向けを中心としたシステム開発と運用","東京都渋谷区","あり","中堅"],["情報通信業","NTTデータ関西","自治体・医療・企業向けのシステム開発（西日本）","大阪府大阪市","あり","中堅"],["情報通信業","TISソリューションリンク","TISグループのシステム開発と運用","東京都新宿区","あり","中堅"],["情報通信業","アルファシステムズ","通信・公共分野のソフトウェア開発","神奈川県川崎市","限定的","中堅"],["情報通信業","カプコン","家庭用ゲームソフトの開発と販売","大阪府大阪市","あり","中堅"],["情報通信業","クリーク・アンド・リバー社","クリエイター専門の人材エージェントと制作","東京都港区","あり","中堅"],["情報通信業","サイバーコム","通信・制御分野を中心としたソフトウェア開発","東京都新宿区","あり","中堅"],["情報通信業","デジタル・インフォメーション・テクノロジー","システム開発とWebセキュリティ製品の提供","東京都中央区","あり","中堅"],["情報通信業","ミロク情報サービス","会計事務所と中小企業向けの会計システム","東京都新宿区","あり","中堅"],["情報通信業","中央出版ホールディングス","教材の出版と教育サービスの運営","愛知県名古屋市","あり","中堅"],["情報通信業","味の素コミュニケーションズ","味の素グループの広告・販促の企画制作","東京都中央区","限定的","中堅"],["情報通信業","富士フイルムシステムサービス","自治体向けのBPOとシステム開発","東京都港区","あり","中堅"],["情報通信業","日本情報産業","業務システムの受託開発と運用","東京都港区","あり","中堅"],["情報通信業","日立システムズエンジニアリングサービス","日立グループのシステム構築と保守運用","神奈川県横浜市","あり","中堅"],["情報通信業","旭情報サービス","システム開発と運用、ネットワーク構築","東京都千代田区","あり","中堅"],["情報通信業","東映アニメーション","テレビアニメと劇場アニメの企画制作","東京都中野区","限定的","中堅"],["情報通信業","JIPテクノサイエンス","土木・建設分野向けの技術計算ソフトとシステム開発","大阪府大阪市","あり","地域"],["情報通信業","アイル","流通・小売業向けの基幹システムとEC支援","大阪府大阪市","あり","地域"],["情報通信業","オプテージ","関西電力系の通信事業。eo光とmineoを提供","大阪府大阪市","あり","地域"],["情報通信業","ミクロ情報サービス","業務システムの受託開発と運用","","あり","地域"],["情報通信業","ユニバーサルコンピューター","業務システムの受託開発と運用","","あり","地域"],["情報通信業","三重テレビ放送","三重県のテレビ放送局","三重県津市","なし","地域"],["情報通信業","奈良新聞社","奈良県の地方新聞の発行","奈良県奈良市","あり","地域"],["情報通信業","紀陽情報システム","紀陽銀行グループのシステム開発と運用","和歌山県和歌山市","あり","地域"],["運輸業・郵便業","全日本空輸","ANA。国内線・国際線の航空輸送","東京都港区","あり","大手"],["運輸業・郵便業","西日本旅客鉄道","JR西日本。鉄道と駅ナカ・不動産事業","大阪府大阪市","あり","大手"],["運輸業・郵便業","日本郵政","郵便・銀行・保険を束ねる持株会社","東京都千代田区","あり","大手"],["運輸業・郵便業","日本通運","総合物流と国際輸送、重量品輸送","東京都千代田区","あり","大手"],["運輸業・郵便業","福山通運","特別積合せによる企業間輸送と物流","広島県福山市","あり","大手"],["運輸業・郵便業","JALグランドサービス","JALグループの空港での貨物・手荷物の取扱い","東京都大田区","限定的","大手"],["運輸業・郵便業","JALスカイ","JALグループの空港での旅客サービス","東京都大田区","限定的","大手"],["運輸業・郵便業","サカイ引越センター","引越サービスの最大手","大阪府堺市","あり","大手"],["運輸業・郵便業","センコー","化学・住宅建材に強い総合物流","東京都江東区","あり","大手"],["運輸業・郵便業","ヤマト運輸","宅急便を中心とする宅配便と企業向け物流","東京都中央区","あり","大手"],["運輸業・郵便業","上組","港湾運送と国際物流の最大手","兵庫県神戸市","あり","大手"],["運輸業・郵便業","佐川急便","飛脚宅配便と企業向けの物流サービス","京都府京都市","あり","大手"],["運輸業・郵便業","日本航空","国内最大級の航空会社。国内線・国際線","東京都品川区","あり","大手"],["運輸業・郵便業","日本貨物鉄道","JR貨物。鉄道による貨物輸送","東京都渋谷区","あり","大手"],["運輸業・郵便業","日本郵便","郵便・物流事業と全国の郵便局の窓口運営","東京都千代田区","あり","大手"],["運輸業・郵便業","東海旅客鉄道","JR東海。東海道新幹線と在来線の運営","愛知県名古屋市","限定的","大手"],["運輸業・郵便業","国際エキスプレス","国際航空貨物の輸送と通関手続き","東京都中央区","あり","中堅"],["運輸業・郵便業","サントリーロジスティクス","サントリー製品の物流と在庫管理","東京都港区","あり","中堅"],["運輸業・郵便業","ヒガシトゥエンティワン","物流・倉庫とオフィス移転、情報機器輸送","大阪府大阪市","あり","中堅"],["運輸業・郵便業","ANAウイングス","ANAグループの地域路線を担う航空会社","東京都大田区","限定的","中堅"],["運輸業・郵便業","ANAエアポートサービス","羽田空港でのグランドハンドリング","東京都大田区","なし","中堅"],["運輸業・郵便業","NX・NPロジスティクス","NIPPON EXPRESSグループの倉庫・配送","","あり","中堅"],["運輸業・郵便業","Peach・Aviation","関西国際空港を拠点とするLCC","大阪府泉佐野市","あり","中堅"],["運輸業・郵便業","スカイマーク","国内線を中心とする中堅の航空会社","東京都大田区","限定的","中堅"],["運輸業・郵便業","阪神電気鉄道","関西の鉄道と沿線のまちづくり","大阪府大阪市","あり","地域"],["運輸業・郵便業","ANA関西空港","関西国際空港での旅客サービスと地上支援","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","ANA大阪空港","伊丹空港での旅客サービスと地上支援","大阪府豊中市","あり","地域"],["運輸業・郵便業","ANA沖縄空港","那覇空港での旅客サービスと地上支援","沖縄県那覇市","なし","地域"],["運輸業・郵便業","Kスカイ","関西エリアの空港での旅客サービス","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","近畿日本鉄道","近鉄。関西・東海の鉄道と沿線開発","大阪府大阪市","あり","地域"],["運輸業・郵便業","JR西日本バス","高速バスと路線バスの運行","大阪府大阪市","あり","地域"],["運輸業・郵便業","ANA中部空港","中部国際空港での旅客・貨物の地上支援","愛知県常滑市","なし","地域"],["運輸業・郵便業","ANA成田エアポートサービス","成田空港でのグランドハンドリング","千葉県成田市","なし","地域"],["運輸業・郵便業","ANA新千歳空港","新千歳空港での旅客サービスと地上支援","北海道千歳市","なし","地域"],["運輸業・郵便業","JALスカイエアポート沖縄","那覇空港での旅客サービスと地上支援","沖縄県那覇市","なし","地域"],["運輸業・郵便業","フジトランスコーポレーション","港湾運送と国際物流。自動車輸送に強み","愛知県名古屋市","限定的","地域"],["運輸業・郵便業","京浜急行電鉄","首都圏の鉄道と沿線の不動産・流通","東京都港区","なし","地域"],["運輸業・郵便業","名古屋鉄道","中京圏の鉄道と交通・不動産・流通","愛知県名古屋市","なし","地域"],["運輸業・郵便業","四国旅客鉄道","JR四国。鉄道と関連事業","香川県高松市","なし","地域"],["運輸業・郵便業","大阪市高速電気軌道","Osaka Metroの運営と沿線事業","大阪府大阪市","あり","地域"],["運輸業・郵便業","西鉄物流","西日本鉄道グループの物流と倉庫","福岡県福岡市","限定的","地域"],["運輸業・郵便業","関西エアポートアビエーションサービス","関西・伊丹空港でのグランドハンドリング","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","阪急電鉄","関西の鉄道と沿線のまちづくり","大阪府池田市","あり","地域"],["卸売業","アルフレッサ","医療用医薬品の卸売大手","東京都千代田区","あり","大手"],["卸売業","大塚商会","OA機器とITシステムの販売・保守","東京都千代田区","あり","大手"],["卸売業","リコージャパン","複合機とITソリューションの販売・保守","東京都港区","あり","大手"],["卸売業","トーホー","業務用食品の卸と食品スーパーの運営","兵庫県神戸市","あり","大手"],["卸売業","渡辺パイプ","配管材、住宅設備、農業資材の卸","東京都中央区","あり","大手"],["卸売業","キヤノンシステムアンドサポート","複合機とITの販売・保守（中小企業向け）","東京都港区","あり","大手"],["卸売業","メディセオ","医療用医薬品の卸売大手","東京都中央区","あり","大手"],["卸売業","カナデン","三菱電機製品を扱う電機系の専門商社","東京都中央区","あり","大手"],["卸売業","ケーエスケー","医療用医薬品の卸売","東京都世田谷区","限定的","大手"],["卸売業","スズケン","医療用医薬品の卸売大手","愛知県名古屋市","あり","大手"],["卸売業","三井物産流通グループ","食品・日用品の卸売と物流","東京都千代田区","あり","大手"],["卸売業","三菱食品","加工食品、酒類、菓子の総合卸","東京都文京区","あり","大手"],["卸売業","内田洋行","オフィス家具と教育・ICT環境の構築","東京都中央区","あり","大手"],["卸売業","加藤産業","食品・酒類・菓子の総合卸","兵庫県西宮市","あり","大手"],["卸売業","因幡電機産業","電設資材の卸売と空調部材の製造","大阪府大阪市","あり","大手"],["卸売業","富士フイルムメディカル","医療用画像機器と医療ITシステムの販売","東京都港区","あり","大手"],["卸売業","日本アクセス","伊藤忠系の食品総合卸。冷凍・チルドに強み","東京都品川区","あり","大手"],["卸売業","日本電商","","","あり","中堅"],["卸売業","江綿","繊維・アパレル素材の専門商社","大阪府大阪市","あり","中堅"],["卸売業","村中医療器","医療機器と医療材料の卸売","大阪府大阪市","あり","中堅"],["卸売業","幸南食糧","米穀の仕入れ、精米、販売","大阪府松原市","あり","中堅"],["卸売業","サンコーインダストリー","ねじ・ファスニング部品の専門商社","大阪府大阪市","あり","中堅"],["卸売業","山星屋","菓子の専門卸","大阪府大阪市","あり","中堅"],["卸売業","西原商会","業務用食品と厨房機器の卸","鹿児島県鹿児島市","あり","中堅"],["卸売業","エコートレーディング","日用品とペット用品の卸","兵庫県西宮市","あり","中堅"],["卸売業","三笑堂","医療機器と医療材料の卸","京都府京都市","あり","中堅"],["卸売業","小西医療器","医療機器と医療材料の卸","大阪府大阪市","あり","中堅"],["卸売業","サンセイテクノス","電子部品と産業機器の技術商社","大阪府大阪市","あり","中堅"],["卸売業","トヨタユーゼック","中古車オークションの運営と中古車流通の支援","東京都江東区","あり","中堅"],["卸売業","ナブコドア","自動ドアの販売、設置、メンテナンス","大阪府大阪市","あり","中堅"],["卸売業","ヤンマーエネルギーシステム","発電機、ガスヒートポンプの販売と保守","大阪府大阪市","あり","中堅"],["卸売業","ワキタ","建設機械のレンタル・販売と不動産、産業機械","大阪府大阪市","あり","中堅"],["卸売業","三菱電機トレーディング","三菱電機製品の国内販売と輸出入","東京都台東区","あり","中堅"],["卸売業","住商メタルワン鋼管","鋼管の販売と加工","東京都千代田区","あり","中堅"],["卸売業","大丸興業","機械、化成品、繊維を扱う専門商社","大阪府大阪市","あり","中堅"],["卸売業","大陽日酸ガス＆ウェルディング","産業ガスと溶接材料の販売","東京都品川区","あり","中堅"],["卸売業","奥村機械","工作機械と産業機械の販売","","あり","中堅"],["卸売業","宇仁繊維","テキスタイル（生地）の専門商社","大阪府大阪市","あり","中堅"],["卸売業","岡本無線電機","電子部品・電子機器の専門商社","大阪府大阪市","あり","中堅"],["卸売業","島津メディカルシステムズ","島津製作所の医用機器の販売と保守","","あり","中堅"],["卸売業","扶洋","化学品と合成樹脂の専門商社","大阪府大阪市","あり","中堅"],["卸売業","日伝","機械要素部品とメカトロ製品の専門商社","大阪府大阪市","あり","中堅"],["卸売業","日本ハムマーケティング","日本ハムグループの食肉・加工食品の販売","大阪府大阪市","あり","中堅"],["卸売業","横浜冷凍","冷蔵倉庫の運営と水産物・食品の卸売","神奈川県横浜市","あり","中堅"],["卸売業","瀧定名古屋","繊維・アパレル素材の専門商社","愛知県名古屋市","あり","中堅"],["卸売業","トヨタL&F近畿","フォークリフトと物流機器の販売・保守","大阪府大阪市","あり","地域"],["卸売業","ダイキンHVACソリューション近畿","ダイキン空調機器の販売と施工・保守","大阪府大阪市","あり","地域"],["卸売業","TOTO関西販売","TOTO製品の関西エリアでの販売","大阪府大阪市","あり","地域"],["卸売業","いすゞ自動車近畿","いすゞのトラック・バスの販売と整備","大阪府大阪市","あり","地域"],["卸売業","ジェイアール西日本商事","JR西日本グループの商社。鉄道資材と物販","大阪府大阪市","あり","地域"],["卸売業","伊丹産業","LPガス、石油製品、米穀の販売","兵庫県伊丹市","あり","地域"],["小売業","阪急阪神百貨店","阪急百貨店・阪神百貨店の運営","大阪府大阪市","あり","大手"],["小売業","ストライプインターナショナル","earth music&ecologyなどアパレルの企画・販売","岡山県岡山市","あり","大手"],["小売業","バロックジャパンリミテッド","MOUSSY、SLYなどアパレルの企画・販売","東京都渋谷区","あり","大手"],["小売業","ジュン","ロペピクニックなどアパレルの企画・販売","東京都渋谷区","あり","大手"],["小売業","エービーシー・マート","靴の小売チェーンの運営とシューズの企画","東京都渋谷区","あり","大手"],["小売業","オルビス","化粧品の通販と店舗販売","東京都品川区","あり","大手"],["小売業","ファーストリテイリング","ユニクロ・GUの企画から製造・販売まで一貫","山口県山口市","あり","大手"],["小売業","ジーユー","GUブランドの企画と店舗運営","東京都江東区","あり","大手"],["小売業","ルイ・ヴィトンジャパン","高級ブランド製品の日本での販売","東京都中央区","あり","大手"],["小売業","アダストリア","グローバルワークなどアパレルの企画・販売","東京都千代田区","あり","大手"],["小売業","ユナイテッドアローズ","セレクトショップの運営と自社企画商品の販売","東京都渋谷区","あり","大手"],["小売業","パルグループホールディングス","アパレルと生活雑貨の企画・販売","大阪府大阪市","あり","大手"],["小売業","しまむら","ファッションセンターしまむらなどの運営","埼玉県さいたま市","あり","大手"],["小売業","ポーラ","化粧品の企画と訪問販売・店舗販売","東京都品川区","あり","大手"],["小売業","スギ薬局","調剤を併設したドラッグストアの運営","愛知県大府市","あり","大手"],["小売業","コスモス薬品","ディスカウント型のドラッグストアの運営","福岡県福岡市","あり","大手"],["小売業","ビックカメラ","家電量販店の運営と通販","東京都豊島区","あり","大手"],["小売業","ヤマダデンキ","家電量販店の運営と住宅・リフォーム事業","群馬県高崎市","あり","大手"],["小売業","ヨドバシカメラ","家電量販店の運営と通販サイトの展開","東京都新宿区","あり","大手"],["小売業","サントリービバレッジソリューション","自動販売機の運営と法人向け飲料の提案","東京都港区","あり","大手"],["小売業","イオンリテール","総合スーパー「イオン」の運営","千葉県千葉市","あり","大手"],["小売業","ライフコーポレーション","食品スーパー「ライフ」の運営","大阪府大阪市","あり","大手"],["小売業","ロピア","精肉に強みを持つ食品スーパーの運営","神奈川県川崎市","あり","大手"],["小売業","Apple Japan","Appleの日本法人。直営店の運営と製品の販売・マーケティング","東京都港区","あり","大手"],["小売業","H&M JAPAN","スウェーデン発のファストファッション。店舗運営と販売","東京都渋谷区","あり","大手"],["小売業","アインホールディングス","調剤薬局アイン薬局、化粧品店アインズ&トルペを全国展開","北海道札幌市","あり","大手"],["小売業","イトーヨーカ堂","総合スーパー。食品を中心とした店舗運営","東京都千代田区","あり","大手"],["小売業","ウエルシア薬局","調剤併設型ドラッグストアを全国展開","東京都千代田区","あり","大手"],["小売業","クオール","調剤薬局クオール薬局の運営。医療モール併設型が中心","東京都港区","あり","大手"],["小売業","クスリのアオキ","北陸発のドラッグストア。食品強化型で西日本へ出店拡大","石川県白山市","あり","大手"],["小売業","コーナン商事","ホームセンター「コーナン」を関西中心に全国展開","大阪府堺市","あり","大手"],["小売業","サンドラッグ","ドラッグストアとディスカウントストアの運営","東京都府中市","あり","大手"],["小売業","セブン－イレブン・ジャパン","コンビニ本部。加盟店の経営指導と商品開発","東京都千代田区","あり","大手"],["小売業","ニトリ","家具・インテリア用品の企画から販売までを一貫展開","北海道札幌市","あり","大手"],["小売業","ベイクルーズ","JOURNAL STANDARD等を展開するアパレル小売","東京都渋谷区","あり","大手"],["小売業","マッシュホールディングス","SNIDEL等のアパレルとコスメbrandの企画・販売","東京都港区","あり","大手"],["小売業","メディカルシステムネットワーク","調剤薬局「なの花薬局」の運営と医薬品ネットワーク事業","北海道札幌市","あり","大手"],["小売業","ヤナセ","メルセデス・ベンツ等の輸入車の販売と整備","東京都港区","あり","大手"],["小売業","日本調剤","調剤薬局の運営、医薬品製造、人材紹介を展開","東京都千代田区","あり","大手"],["小売業","総合メディカル","調剤薬局「そうごう薬局」の運営と医業経営支援","福岡県福岡市","あり","大手"],["小売業","良品計画","「無印良品」の企画・開発から小売までを一貫展開","東京都文京区","あり","大手"],["小売業","ピーチ・ジョン","女性用下着の企画と通販・店舗販売","東京都渋谷区","あり","中堅"],["小売業","ナイスクラップ","レディースアパレルの企画と店舗販売","東京都渋谷区","あり","中堅"],["小売業","アズノゥアズ","レディースアパレルの企画と店舗販売","東京都渋谷区","あり","中堅"],["小売業","イング","レディースアパレルの企画と店舗販売","大阪府大阪市","あり","中堅"],["小売業","ヴァンドームヤマダ","ジュエリーの企画と店舗販売","東京都台東区","あり","中堅"],["小売業","ゴディバジャパン","チョコレートの製造と店舗・通販での販売","東京都港区","あり","中堅"],["小売業","タペストリー・ジャパン","コーチ、ケイト・スペードなどの日本での販売","東京都中央区","あり","中堅"],["小売業","ツツミ","宝飾品の企画・製造・小売。全国に直営店を展開","東京都立川市","あり","中堅"],["小売業","ディーゼルジャパン","イタリア発アパレルブランドの日本での販売","東京都渋谷区","あり","中堅"],["小売業","マルジェラジャパン","メゾン マルジェラの日本での販売","東京都港区","あり","中堅"],["小売業","ラルフローレン","米国発ファッションブランドの日本での販売","東京都港区","あり","中堅"],["小売業","ロクシタンジャポン","フランス発の化粧品ブランドの日本での販売","東京都渋谷区","あり","中堅"],["小売業","マナベインテリアハーツ","家具・インテリアの小売","大阪府堺市","あり","地域"],["小売業","トヨタユナイテッド奈良","トヨタ車の販売店。新車・中古車と整備","奈良県奈良市","あり","地域"],["小売業","ホンダプリモ大阪南","ホンダ車の販売店。新車・中古車と整備","大阪府","あり","地域"],["小売業","大阪トヨタ自動車","トヨタ車の販売店。新車・中古車と整備","大阪府大阪市","あり","地域"],["小売業","ホンダモビリティ近畿","ホンダ車の販売店。新車・中古車と整備","大阪府","あり","地域"],["小売業","生活協同組合コープこうべ","兵庫・大阪の生協。店舗運営と宅配事業","兵庫県神戸市","あり","地域"],["小売業","タカラ通商","美容室向け商材の卸と、カー用品・車販売を手がける","大阪府大阪市","あり","地域"],["小売業","ネッツトヨタゾナ神戸","トヨタ車の販売店。新車・中古車販売と点検整備","兵庫県神戸市","あり","地域"],["小売業","マルアイ","兵庫県を地盤とする食品スーパー","兵庫県姫路市","あり","地域"],["小売業","万代","大阪・兵庫を地盤とする食品スーパー","大阪府東大阪市","あり","地域"],["小売業","上新電機","家電量販店「ジョーシン」を関西中心に展開","大阪府大阪市","あり","地域"],["小売業","兵庫日産自動車","日産車の販売店。新車・中古車販売と点検整備","兵庫県神戸市","あり","地域"],["小売業","大阪トヨペット","トヨタ車の販売店。大阪府内に店舗を展開","大阪府大阪市","あり","地域"],["小売業","神戸トヨペット","トヨタ車の販売店。兵庫県内に店舗を展開","兵庫県神戸市","あり","地域"],["金融業・保険業","かんぽ生命保険","郵便局を窓口とする生命保険","東京都千代田区","あり","大手"],["金融業・保険業","明治安田生命保険","生命保険。個人・団体向けの保障","東京都千代田区","あり","大手"],["金融業・保険業","SMBCコンシューマーファイナンス","プロミスブランドの消費者向け融資と保証","東京都江東区","あり","大手"],["金融業・保険業","あいおいニッセイ同和損害保険","自動車保険を中心とした損害保険","東京都渋谷区","あり","大手"],["金融業・保険業","みずほ証券","みずほグループの総合証券","東京都千代田区","あり","大手"],["金融業・保険業","ゆうちょ銀行","郵便貯金を引き継ぐ銀行。全国の郵便局で展開","東京都千代田区","あり","大手"],["金融業・保険業","りそな銀行","大阪発祥の都市銀行。個人・中小企業取引に強み","大阪府大阪市","あり","大手"],["金融業・保険業","ジブラルタ生命保険","教職員・法人市場に強い生命保険","東京都千代田区","あり","大手"],["金融業・保険業","ジャックス","クレジットカードと信販、オートローン","東京都渋谷区","あり","大手"],["金融業・保険業","住友生命保険","大阪発祥の生命保険。個人・法人向け保障","大阪府大阪市","あり","大手"],["金融業・保険業","大和証券グループ","大手総合証券。リテールとホールセール","東京都千代田区","あり","大手"],["金融業・保険業","岡三証券","全国に店舗を持つ対面型の総合証券","東京都中央区","あり","大手"],["金融業・保険業","日本生命保険","国内最大級の生命保険。個人・法人向け保障","大阪府大阪市","あり","大手"],["金融業・保険業","東海東京証券","名古屋発祥の総合証券","愛知県名古屋市","あり","大手"],["金融業・保険業","野村證券","国内最大手の総合証券","東京都中央区","あり","大手"],["金融業・保険業","丸三証券","対面営業を軸とする中堅の証券","東京都中央区","あり","中堅"],["金融業・保険業","いちよし証券","中小型の成長株に強みを持つ証券","東京都中央区","あり","中堅"],["金融業・保険業","イオン銀行","イオングループの流通系銀行","東京都江東区","あり","中堅"],["金融業・保険業","大同信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","大阪中河内農業協同組合","東大阪エリアのJA。信用・共済・営農指導","大阪府東大阪市","あり","地域"],["金融業・保険業","堺市農業協同組合","堺市のJA。信用・共済・営農指導","大阪府堺市","あり","地域"],["金融業・保険業","大阪南農業協同組合","大阪府南部のJA。信用・共済・営農指導","大阪府富田林市","あり","地域"],["金融業・保険業","いずみの農業協同組合","和泉エリアのJA。信用・共済・営農指導","大阪府和泉市","あり","地域"],["金融業・保険業","大阪泉州農業協同組合","泉州エリアのJA。信用・共済・営農指導","大阪府岸和田市","あり","地域"],["金融業・保険業","わかやま農業協同組合","和歌山市エリアのJA。信用・共済・営農指導","和歌山県和歌山市","あり","地域"],["金融業・保険業","紀陽銀行","和歌山県を地盤とする地方銀行","和歌山県和歌山市","あり","地域"],["金融業・保険業","南都銀行","奈良県を地盤とする地方銀行","奈良県奈良市","あり","地域"],["金融業・保険業","北陸銀行","富山県を地盤とする地方銀行","富山県富山市","限定的","地域"],["金融業・保険業","近畿労働金庫","近畿の労働組合員向けの金融機関","大阪府大阪市","あり","地域"],["金融業・保険業","大阪信用金庫","大阪府を地盤とする信用金庫","大阪府大阪市","あり","地域"],["金融業・保険業","大阪シティ信用金庫","大阪市を地盤とする信用金庫","大阪府大阪市","あり","地域"],["金融業・保険業","岩井コスモ証券","大阪発祥の証券。対面とネット取引","大阪府大阪市","あり","地域"],["金融業・保険業","きのくに信用金庫","和歌山県を地盤とする信用金庫","和歌山県和歌山市","あり","地域"],["金融業・保険業","のぞみ信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","みなと銀行","兵庫県を地盤とする地方銀行。りそなグループ","兵庫県神戸市","あり","地域"],["金融業・保険業","トマト銀行","岡山県を地盤とする第二地方銀行","岡山県岡山市","限定的","地域"],["金融業・保険業","京都中央信用金庫","京都府を地盤とする信用金庫。全国有数の規模","京都府京都市","あり","地域"],["金融業・保険業","京都銀行","京都府を地盤とする地方銀行","京都府京都市","あり","地域"],["金融業・保険業","但陽信用金庫","兵庫県加古川市を地盤とする信用金庫","兵庫県加古川市","あり","地域"],["金融業・保険業","但馬銀行","兵庫県北部を地盤とする地方銀行","兵庫県豊岡市","あり","地域"],["金融業・保険業","兵庫信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","北おおさか信用金庫","大阪府北部を地盤とする信用金庫","大阪府池田市","あり","地域"],["金融業・保険業","和歌山県農業協同組合","和歌山県のJA。信用・共済・営農指導","和歌山県和歌山市","あり","地域"],["金融業・保険業","四国銀行","高知県を地盤とする地方銀行","高知県高知市","限定的","地域"],["金融業・保険業","奈良中央信用金庫","奈良県を地盤とする信用金庫","奈良県大和高田市","あり","地域"],["金融業・保険業","姫路信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","尼崎信用金庫","兵庫県尼崎市を地盤とする信用金庫","兵庫県尼崎市","あり","地域"],["金融業・保険業","山陰合同銀行","島根・鳥取を地盤とする地方銀行","島根県松江市","限定的","地域"],["金融業・保険業","広島銀行","広島県を地盤とする地方銀行","広島県広島市","限定的","地域"],["金融業・保険業","徳島大正銀行","徳島県と大阪を地盤とする地方銀行","徳島県徳島市","あり","地域"],["金融業・保険業","愛媛銀行","愛媛県を地盤とする第二地方銀行","愛媛県松山市","限定的","地域"],["金融業・保険業","成協信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","播州信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","日新信用金庫","兵庫県神戸市を地盤とする信用金庫","兵庫県神戸市","あり","地域"],["金融業・保険業","東京シティ信用金庫","東京都を地盤とする信用金庫","東京都中央区","なし","地域"],["金融業・保険業","池田泉州銀行","大阪府北部を地盤とする地方銀行","大阪府大阪市","あり","地域"],["金融業・保険業","百十四銀行","香川県を地盤とする地方銀行","香川県高松市","限定的","地域"],["金融業・保険業","神戸信用金庫","兵庫県神戸市を地盤とする信用金庫","兵庫県神戸市","あり","地域"],["金融業・保険業","近畿産業信用組合","大阪を拠点に近畿一円で展開する信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","関西みらい銀行","大阪府を地盤とする地方銀行。りそなグループ","大阪府大阪市","あり","地域"],["金融業・保険業","阿波銀行","徳島県を地盤とする地方銀行","徳島県徳島市","限定的","地域"],["金融業・保険業","香川銀行","香川県を地盤とする第二地方銀行","香川県高松市","限定的","地域"],["建設業・不動産業","タマホーム","ローコスト注文住宅の設計・施工・販売","東京都港区","あり","大手"],["建設業・不動産業","大東建託","賃貸住宅の建築請負と一括借上げ、管理","東京都港区","あり","大手"],["建設業・不動産業","NIPPO","道路舗装の最大手。アスファルト合材の製造と道路工事","東京都中央区","あり","大手"],["建設業・不動産業","きんでん","関西電力系の電気設備工事。屋内配線から送配電まで","大阪府大阪市","あり","大手"],["建設業・不動産業","パナソニックホームズ","戸建・賃貸住宅の設計、施工、販売","大阪府豊中市","あり","大手"],["建設業・不動産業","一条工務店","高気密高断熱を特長とする注文住宅の設計・施工","東京都江東区","あり","大手"],["建設業・不動産業","三井住友建設","土木と建築の総合建設。橋梁とマンションに強み","東京都中央区","あり","大手"],["建設業・不動産業","中電工","中国電力系の電気設備工事と情報通信工事","広島県広島市","限定的","大手"],["建設業・不動産業","五洋建設","海洋土木に強い総合建設。港湾工事の最大手","東京都文京区","あり","大手"],["建設業・不動産業","住友不動産販売","不動産の売買仲介と賃貸。ステップブランドで展開","東京都新宿区","あり","大手"],["建設業・不動産業","住友林業","木造注文住宅の設計・施工と、木材建材の流通","東京都千代田区","あり","大手"],["建設業・不動産業","前田建設工業","土木と建築の総合建設。インフラ運営事業も展開","東京都千代田区","あり","大手"],["建設業・不動産業","前田道路","道路舗装とアスファルト合材の製造","東京都品川区","あり","大手"],["建設業・不動産業","大和ハウス工業","戸建・賃貸住宅、商業施設、物流施設の開発","大阪府大阪市","あり","大手"],["建設業・不動産業","大成建設","スーパーゼネコン。大規模建築と土木","東京都新宿区","あり","大手"],["建設業・不動産業","大林組","スーパーゼネコン。大阪発祥で建築・土木とも強い","東京都港区","あり","大手"],["建設業・不動産業","奥村組","大阪発祥の総合建設。免震・耐震技術に強み","大阪府大阪市","あり","大手"],["建設業・不動産業","戸田建設","総合建設。病院・学校など建築分野に強み","東京都中央区","あり","大手"],["建設業・不動産業","日本道路","道路舗装とアスファルト合材の製造","東京都港区","あり","大手"],["建設業・不動産業","旭化成ホームズ","ヘーベルハウスの設計、施工、販売と賃貸管理","東京都千代田区","あり","大手"],["建設業・不動産業","東亜建設工業","港湾・海洋土木に強い総合建設","東京都新宿区","あり","大手"],["建設業・不動産業","東急リバブル","不動産の売買仲介と新築マンションの販売受託","東京都渋谷区","あり","大手"],["建設業・不動産業","清水建設","スーパーゼネコン。建築を中心に土木・エンジニアリング","東京都中央区","あり","大手"],["建設業・不動産業","熊谷組","総合建設。ダム・トンネルなど土木に強み","東京都新宿区","あり","大手"],["建設業・不動産業","積水ハウス","戸建・賃貸住宅の設計施工と、まちづくり開発","大阪府大阪市","あり","大手"],["建設業・不動産業","竹中工務店","大阪発祥のスーパーゼネコン。建築専業","大阪府大阪市","あり","大手"],["建設業・不動産業","西松建設","総合建設。土木・建築とインフラ運営","東京都港区","あり","大手"],["建設業・不動産業","鉄建建設","鉄道関連工事に強い総合建設","東京都千代田区","あり","大手"],["建設業・不動産業","長谷工コーポレーション","分譲マンションの設計・施工の最大手","東京都港区","あり","大手"],["建設業・不動産業","鹿島道路","道路舗装とアスファルト合材の製造","東京都文京区","あり","大手"],["建設業・不動産業","髙松建設","大阪発祥の総合建設。マンション建築に強み","大阪府大阪市","あり","中堅"],["建設業・不動産業","みずほ不動産販売","みずほ銀行系の不動産の売買仲介","東京都中央区","あり","中堅"],["建設業・不動産業","セキスイハイム不動産","積水化学グループの不動産仲介と賃貸管理","","あり","中堅"],["建設業・不動産業","パナソニック防災システムズ","防災・消防システムの設計、施工、保守","","あり","中堅"],["建設業・不動産業","三井住友トラスト不動産","三井住友信託銀行系の不動産の売買仲介","東京都千代田区","あり","中堅"],["建設業・不動産業","三菱UFJ不動産販売","三菱UFJ銀行系の不動産の売買仲介","東京都千代田区","あり","中堅"],["建設業・不動産業","住友不動産ステップ","住友不動産グループの不動産の売買仲介","東京都新宿区","あり","中堅"],["建設業・不動産業","住友林業アーキテクノ","住友林業グループの住宅部材の製造と施工","","あり","中堅"],["建設業・不動産業","住友林業ホームサービス","住友林業グループの不動産の売買仲介","東京都新宿区","あり","中堅"],["建設業・不動産業","住友林業ホームテック","戸建住宅のリフォーム・リノベーション","東京都千代田区","あり","中堅"],["建設業・不動産業","東亜道路工業","道路舗装とアスファルト乳剤の製造","東京都港区","あり","中堅"],["建設業・不動産業","近鉄不動産","近鉄グループの不動産開発、分譲、仲介","大阪府大阪市","あり","地域"],["建設業・不動産業","JR西日本SC開発","JR西日本の駅ビル・ショッピングセンターの開発と運営","大阪府大阪市","あり","地域"],["建設業・不動産業","JR西日本電気システム","鉄道の電気設備の設計・施工・保守","大阪府大阪市","あり","地域"],["建設業・不動産業","セキスイハイム近畿","セキスイハイムの住宅の販売と施工（近畿エリア）","大阪府大阪市","あり","地域"],["建設業・不動産業","パナソニックホームズ不動産","不動産の仲介と賃貸管理","大阪府豊中市","あり","地域"],["建設業・不動産業","明星工業","プラントの断熱・保温工事と関連設備の施工","大阪府大阪市","あり","地域"],["建設業・不動産業","積水ハウス不動産","積水ハウスグループの不動産仲介と賃貸管理","大阪府大阪市","あり","地域"],["建設業・不動産業","西日本高速道路ファシリティーズ","高速道路の施設・設備の保全と管理","大阪府大阪市","あり","地域"],["建設業・不動産業","近畿不動産","不動産の売買仲介と賃貸","","あり","地域"],["建設業・不動産業","錢高組","大阪発祥の総合建設。土木・建築","大阪府大阪市","あり","地域"],["サービス","吉本興業ホールディングス","お笑い芸能事務所の運営と番組・劇場事業","大阪府大阪市","あり","大手"],["サービス","ユー・エス・ジェイ","ユニバーサル・スタジオ・ジャパンの運営","大阪府大阪市","あり","大手"],["サービス","エイチ・アイ・エス","旅行の企画・手配とテーマパーク事業","東京都新宿区","あり","大手"],["サービス","ALSOK","常駐警備、機械警備、綜合的なセキュリティ","東京都港区","あり","大手"],["サービス","日立ビルシステム","エレベーター・エスカレーターの保守と改修","東京都千代田区","あり","大手"],["サービス","ディップ","バイトルなどの求人情報サービスとDX支援","東京都港区","あり","大手"],["サービス","ダスキン","清掃用具のレンタルとミスタードーナツの運営","大阪府吹田市","あり","大手"],["サービス","西尾レントオール","建設機械とイベント用品の総合レンタル","大阪府大阪市","あり","大手"],["サービス","星野リゾート","星のや、界などのホテル・旅館の運営","長野県軽井沢町","あり","大手"],["サービス","リゾートトラスト","会員制リゾートホテルの運営と会員権販売","愛知県名古屋市","あり","大手"],["サービス","帝国ホテル","東京・大阪などのシティホテルの運営","東京都千代田区","あり","大手"],["サービス","ヒルトン・ワールドワイド","外資系ホテルチェーンの運営","東京都新宿区","あり","大手"],["サービス","テイクアンドギヴ・ニーズ","ゲストハウス型の結婚式場の運営","東京都品川区","あり","大手"],["サービス","トリドールホールディングス","丸亀製麺などの飲食チェーンの運営","兵庫県神戸市","あり","大手"],["サービス","スターバックスコーヒージャパン","スターバックス店舗の運営","東京都品川区","あり","大手"],["サービス","タリーズコーヒージャパン","タリーズコーヒー店舗の運営","東京都新宿区","あり","大手"],["サービス","コナミスポーツ","フィットネスクラブとスクールの運営","東京都中央区","あり","大手"],["サービス","ECC","英会話スクールと語学教育、学習塾の運営","大阪府大阪市","あり","大手"],["サービス","JTB","旅行の企画・手配と法人向けの出張・イベント支援","東京都品川区","あり","大手"],["サービス","KNT-CTホールディングス","近畿日本ツーリストとクラブツーリズムの持株会社","東京都新宿区","あり","大手"],["サービス","LITALICO","発達障害のある子ども向け教室と就労支援","東京都目黒区","あり","大手"],["サービス","SOMPOケア","介護付きホームと在宅介護サービスの運営","東京都品川区","あり","大手"],["サービス","アデコ","人材派遣と人材紹介、アウトソーシング","東京都千代田区","あり","大手"],["サービス","アパホテル","全国展開のビジネスホテルチェーンの運営","東京都港区","あり","大手"],["サービス","イオンディライト","商業施設の設備管理と清掃、警備","大阪府大阪市","あり","大手"],["サービス","エームサービス","社員食堂や病院給食など給食サービスの受託","東京都港区","あり","大手"],["サービス","スタジオアリス","こども写真館の運営","大阪府大阪市","あり","大手"],["サービス","ベネッセスタイルケア","介護付きホームと高齢者向け住宅の運営","東京都多摩市","あり","大手"],["サービス","マイナビ","就職・転職の情報サービスと人材紹介","東京都千代田区","あり","大手"],["サービス","共立メンテナンス","ドーミーインなどのホテルと学生寮の運営","東京都千代田区","あり","大手"],["サービス","日本旅行","旅行の企画・手配と地域交流ビジネス","東京都中央区","あり","大手"],["サービス","日本管財","ビルの総合管理と不動産の運営管理","兵庫県西宮市","あり","大手"],["サービス","東武トップツアーズ","旅行の企画・手配と自治体向けの事業受託","東京都墨田区","あり","大手"],["サービス","船井総合研究所","中堅・中小企業向けの経営コンサルティング","大阪府大阪市","あり","大手"],["サービス","関西電力","関西エリアの電力の販売とエネルギー・情報通信","大阪府大阪市","あり","大手"],["サービス","阪急交通社","トラピックスなどの旅行の企画と販売","大阪府大阪市","あり","大手"],["サービス","エム・ユー・センターサービス大阪","三菱UFJ銀行グループの事務業務の受託","大阪府大阪市","あり","中堅"],["サービス","クボタ機械設計","クボタ製品の設計受託と技術サービス","大阪府大阪市","あり","中堅"],["サービス","LIXIL Advanced Showroom","LIXIL製品のショールーム運営と接客","東京都江東区","あり","中堅"],["サービス","伊藤忠アーバンコミュニティ","マンションとビルの管理・運営","東京都中央区","あり","中堅"],["サービス","内田洋行ビジネスエキスパート","内田洋行グループの事務・物流の受託","東京都中央区","あり","中堅"],["サービス","学情","新卒・若手向けの就職情報サービスと人材紹介","大阪府大阪市","あり","中堅"],["サービス","レント","建設機械のレンタルと販売","愛知県名古屋市","あり","中堅"],["サービス","フォーシーズンズ","外資系ラグジュアリーホテルの運営","東京都","あり","中堅"],["サービス","さなる","佐鳴予備校の運営と教育コンテンツの提供","静岡県浜松市","限定的","中堅"],["サービス","アールイズ・ウエディング","リゾートウエディングの企画と運営","東京都渋谷区","限定的","中堅"],["サービス","インソース","企業向けの社員研修の企画と実施","東京都千代田区","あり","中堅"],["サービス","オムロンフィールドエンジニアリング","駅務機器やATMなど社会システムの保守","東京都新宿区","あり","中堅"],["サービス","オリックス・ホテルマネジメント","オリックスグループのホテル・旅館の運営","東京都港区","あり","中堅"],["サービス","キズキ","不登校・中退者向けの個別指導塾と就労支援","東京都新宿区","あり","中堅"],["サービス","ハウステンボス","長崎県のテーマパークの運営","長崎県佐世保市","なし","中堅"],["サービス","バルニバービ","カフェ・レストランの運営と地域開発","大阪府大阪市","あり","中堅"],["サービス","フジモトHD","藤本製薬グループの持株会社。医薬品と健康食品","大阪府松原市","あり","中堅"],["サービス","名鉄観光サービス","名鉄グループの旅行の企画と手配","愛知県名古屋市","あり","中堅"],["サービス","明治安田オフィスパートナーズ","明治安田生命グループの事務業務の受託","東京都千代田区","あり","中堅"],["サービス","読売旅行","読売新聞グループの旅行の企画と販売","東京都中央区","あり","中堅"],["サービス","ロイヤルホテル","リーガロイヤルホテルの運営","大阪府大阪市","あり","地域"],["サービス","トヨタレンタリース大阪","レンタカーとカーリースの提供","大阪府大阪市","あり","地域"],["サービス","阪急阪神ビルマネジメント","阪急阪神グループのビルの管理と運営","大阪府大阪市","あり","地域"],["サービス","アド近鉄","近鉄グループの広告代理店。交通広告に強み","大阪府大阪市","あり","地域"],["サービス","キョウエイアドインターナショナル","総合広告代理店。屋外広告と販促","大阪府大阪市","あり","地域"],["サービス","近鉄・都ホテルズ","都ホテルズ＆リゾーツの運営","大阪府大阪市","あり","地域"],["サービス","ウェスティンホテル大阪","大阪のシティホテルの運営","大阪府大阪市","あり","地域"],["サービス","ホテルオークラ神戸","神戸のシティホテルの運営","兵庫県神戸市","あり","地域"],["サービス","三機サービス","空調・給排水設備のメンテナンスと工事","兵庫県西宮市","あり","地域"],["サービス","四国電力","四国エリアの電力の販売とエネルギー事業","香川県高松市","なし","地域"],["サービス","大阪ガスネットワーク","近畿圏のガス導管網の建設と保安・供給","大阪府大阪市","あり","地域"],["サービス","大阪ガスビジネスクリエイト","大阪ガスグループの事務・人事・経理のBPO","大阪府大阪市","あり","地域"],["サービス","東洋テック","関西を地盤とする警備と機械警備","大阪府大阪市","あり","地域"],["サービス","神戸ポートピアホテル","神戸ポートアイランドのシティホテルの運営","兵庫県神戸市","あり","地域"],["サービス","福井県民生活協同組合","福井県の生協。店舗と宅配の運営","福井県福井市","なし","地域"],["サービス","関西電力送配電","関西エリアの送配電設備の建設と保守","大阪府大阪市","あり","地域"],["公務・医療・教育・団体（参考／業種分類外）","三重県庁","三重県の行政事務全般","三重県津市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","中部矯正管区","中部地方の刑事施設を統括する法務省の機関","愛知県名古屋市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","京都地方裁判所","京都府を管轄する裁判所の事務","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都大学医学部附属病院","京都大学の附属病院。診療と医学研究","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都工場保健会","健康診断と産業保健サービスの提供","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都市消防局","京都市の消防・救急・防災","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都府庁","京都府の行政事務全般","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","八尾市役所","大阪府八尾市の行政事務全般","大阪府八尾市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫医科大学","医科大学と附属病院を運営する学校法人","兵庫県西宮市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県商工会連合会","兵庫県内の商工会の指導と中小企業支援","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県庁病院局","兵庫県立病院の運営と管理","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県教育委員会","兵庫県の学校教育と生涯学習の行政","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県警察本部","兵庫県の警察事務と治安維持","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","出入国在留管理庁","出入国管理と在留資格に関する法務省の機関","東京都千代田区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","医誠会","大阪を中心に病院・クリニックを運営する医療法人","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","名張市役所","三重県名張市の行政事務全般","三重県名張市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","和歌山県庁","和歌山県の行政事務全般","和歌山県和歌山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","和歌山県福祉事業団","和歌山県の福祉施設の運営","和歌山県和歌山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","四万十町役場","高知県四万十町の行政事務全般","高知県四万十町","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","国立病院機構","全国の国立病院を運営する独立行政法人","東京都目黒区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","地域医療機能推進機構","JCHO。全国の病院・介護施設を運営","東京都港区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","堺市役所","大阪府堺市の行政事務全般","大阪府堺市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大東市役所","大阪府大東市の行政事務全般","大阪府大東市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大西脳神経外科病院","兵庫県明石市の脳神経外科を中心とした病院","兵庫県明石市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪労働局","大阪府の労働行政とハローワークの統括","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪回生病院","大阪市淀川区の総合病院","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪国税局","近畿2府4県の国税の賦課と徴収","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪地方裁判所","大阪府を管轄する裁判所の事務","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪市役所","大阪市の行政事務全般","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪市消防局","大阪市の消防・救急・防災","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府国民健康保険団体連合会","国民健康保険の診療報酬の審査と支払い","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府庁","大阪府の行政事務全般","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府歯科保険医協会","歯科医師の保険診療に関する団体","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府警察本部","大阪府の警察事務と治安維持","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪狭山市役所","大阪府大阪狭山市の行政事務全般","大阪府大阪狭山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","太子町役場","兵庫県太子町の行政事務全般","兵庫県太子町","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","姫路市役所","兵庫県姫路市の行政事務全般","兵庫県姫路市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","尼崎中央リハビリテーション病院","兵庫県尼崎市の回復期リハビリテーション病院","兵庫県尼崎市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","山口県商工会連合会","山口県内の商工会の指導と中小企業支援","山口県山口市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","常翔学園","大阪工業大学、摂南大学などを運営する学校法人","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本モーターボート競走会","競艇（ボートレース）の実施と運営","東京都港区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本下水道事業団","地方公共団体の下水道施設の建設と技術支援","東京都文京区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本中小企業福祉事業財団","中小企業向けの福利厚生制度の提供","東京都千代田区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本年金機構","公的年金の記録管理、保険料徴収、給付","東京都杉並区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","東京消防庁","東京都の消防・救急・防災","東京都千代田区","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","松原市役所","大阪府松原市の行政事務全般","大阪府松原市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","泉陽会","大阪を拠点に福祉施設を運営する社会福祉法人","大阪府","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","生長会","大阪府堺市を拠点とする病院・福祉施設の運営","大阪府堺市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸地方検察庁","兵庫県を管轄する検察庁の事務","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸市役所","神戸市の行政事務全般","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸市教育委員会","神戸市の学校教育と生涯学習の行政","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","若弘会","大阪府東大阪市を拠点とする病院・介護施設の運営","大阪府東大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","警視庁","東京都の警察事務と治安維持","東京都千代田区","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","近畿矯正管区","近畿地方の刑事施設を統括する法務省の機関","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","近畿財務局","近畿の財政・金融行政と国有財産の管理","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","高知県庁","高知県の行政事務全般","高知県高知市","なし","－"]];
+const COMP_EXCLUDE=["公務・医療・教育・団体（参考／業種分類外）"];
+const COMP_JOBMAP={"apparel": {"c": ["小売業"], "k": ["アパレル", "ファッション", "衣料", "下着", "靴", "ジュエリー", "宝飾"]}, "biyo": {"c": ["小売業"], "k": ["化粧品", "コスメ", "美容"]}, "drug": {"c": ["小売業"], "k": ["ドラッグストア", "調剤", "薬"]}, "denki": {"c": ["小売業"], "k": ["家電"]}, "dealer": {"c": ["小売業"], "k": ["車", "自動車"]}, "hotel": {"c": ["サービス"], "k": ["ホテル", "旅館", "リゾート"]}, "bridal": {"c": ["サービス"], "k": ["結婚式", "ウエディング", "ブライダル"]}, "resto": {"c": ["サービス"], "k": ["飲食", "レストラン", "カフェ", "コーヒー", "ドーナツ"]}, "tencho": {"c": ["小売業", "サービス"], "k": []}};
+const COMP_GYOMAP={"アパレル（専門店・商業施設）": ["小売業", "アパレル"], "化粧品（百貨店カウンター）": ["小売業", "化粧品"], "ドラッグストア": ["小売業", "ドラッグストア"], "家電量販店": ["小売業", "家電"], "自動車ディーラー": ["小売業", "車"], "食品スーパー": ["小売業", "スーパー"], "コンビニ（本部・スーパーバイザー）": ["小売業", "コンビニ"], "ホテル・旅館": ["サービス", "ホテル"], "ブライダル（結婚式場）": ["サービス", "結婚式"], "飲食チェーン": ["サービス", "飲食"], "専門小売（宝飾・家具・スポーツ）": ["小売業", "ジュエリー"]};
+const COMP_LIST=COMPANIES.filter(c=>!COMP_EXCLUDE.includes(c[0]));
+const COMP_CATS=[...new Set(COMP_LIST.map(c=>c[0]))];
+const COMP_SIZES=["大手","中堅","地域"].filter(s=>COMP_LIST.some(c=>c[5]===s))
+  .concat(COMP_LIST.some(c=>c[5]==="－")?["その他"]:[]);
+const SZCLASS={"大手":"s-ote","中堅":"s-chu","地域":"s-chi","－":"s-non"};
+const COMP_LABEL=s=>String(s).replace("（参考／業種分類外）","");
+const compEsc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+let compCat="all",compSize="all",compQ="",compShown=20;
+
+function compChips(el,items,cur,onPick){
+  el.querySelectorAll(".comp-chip").forEach(b=>b.remove());
+  [{k:"all",l:"すべて"},...items.map(x=>({k:x,l:COMP_LABEL(x)}))].forEach(o=>{
+    const b=document.createElement("button");
+    b.className="comp-chip";b.textContent=o.l;
+    b.setAttribute("aria-pressed",String(o.k===cur));
+    b.addEventListener("click",()=>onPick(o.k));
+    el.appendChild(b);
+  });
+}
+function drawCat(){compChips(document.getElementById("compCat"),COMP_CATS,compCat,k=>{compCat=k;drawCat();compReset();});}
+function drawSz(){compChips(document.getElementById("compSize"),COMP_SIZES,compSize,k=>{compSize=k;drawSz();compReset();});}
+function compFiltered(){
+  const q=compQ.trim().toLowerCase();
+  return COMP_LIST.filter(c=>{
+    if(compCat!=="all"&&c[0]!==compCat)return false;
+    if(compSize!=="all"&&c[5]!==(compSize==="その他"?"－":compSize))return false;
+    if(q&&!(c[1]+c[2]+c[3]).toLowerCase().includes(q))return false;
+    return true;
+  });
+}
+function compRender(){
+  const list=compFiltered(),view=list.slice(0,compShown);
+  document.getElementById("compCount").innerHTML=
+    list.length?`<b>${list.length}</b> 社が該当（${view.length}社を表示中）`:"";
+  document.getElementById("compGrid").innerHTML= list.length? view.map(c=>`
+    <article class="comp-card">
+      <h4>${compEsc(c[1])}</h4>
+      <div class="comp-badges"><span class="cb-cat">${compEsc(COMP_LABEL(c[0]))}</span><span class="${SZCLASS[c[5]]||"s-non"}">${compEsc(c[5]==="－"?"その他":c[5])}</span></div>
+      ${c[2]?`<p class="comp-biz">${compEsc(c[2])}</p>`:""}
+      <p class="comp-meta">${c[3]?"本社："+compEsc(c[3]):""}${c[3]&&c[4]?" ／ ":""}${c[4]?"関西勤務地："+compEsc(c[4]):""}</p>
+    </article>`).join("")
+    : `<div class="comp-empty">この条件に当てはまる企業はありません。業種や規模の絞り込みを外すか、検索語を短くしてみてください。</div>`;
+  const more=document.getElementById("compMore");
+  more.style.display=list.length>view.length?"":"none";
+  more.textContent=`さらに${Math.min(20,list.length-view.length)}社見る`;
+}
+function compReset(){compShown=20;compRender();}
+function compApplyFilter(cat,q){
+  compCat=COMP_CATS.includes(cat)?cat:"all";compSize="all";compQ=q||"";
+  document.getElementById("compQ").value=compQ;
+  drawCat();drawSz();compReset();
+  document.getElementById("kigyo").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function compPick(spec,n){
+  const cats=(spec&&spec.c)||[],kw=(spec&&spec.k)||[];
+  let pool=cats.length
+    ? COMP_LIST.filter(c=>cats.includes(c[0]))
+    : COMP_CATS.flatMap(cat=>{const g=COMP_LIST.filter(c=>c[0]===cat);return g.length?[g[0],g[g.length-1]]:[];});
+  if(kw.length){
+    const hit=pool.filter(c=>kw.some(k=>(c[1]+c[2]).includes(k)));
+    if(hit.length>=1)pool=hit;
+  }
+  const groups=["大手","中堅","地域","－"].map(sz=>pool.filter(c=>c[5]===sz));
+  const out=[];let i=0;
+  while(out.length<n&&groups.some(g=>g.length)){
+    const g=groups[i%groups.length];
+    if(g.length)out.push(g.shift());
+    i++;
+  }
+  return out;
+}
+function compMiniHTML(spec,n){
+  const picks=compPick(spec,n),cats=(spec&&spec.c)||[];
+  if(!picks.length)return "";
+  const one=(cats.length===1)?cats[0]:"all";
+  const label=one==="all"?"企業一覧をすべて見る":compEsc(COMP_LABEL(one))+"の企業をすべて見る";
+  return `<div class="blk">
+    <h5>▍どんな会社で、この販売職ができるか</h5>
+    <div class="comp-mini">${picks.map(c=>`<span class="cm"><b>${compEsc(c[1])}</b><i>${compEsc(c[5]==="－"?"その他":c[5])}</i></span>`).join("")}</div>
+    <p class="comp-caution">同じ会社でも、業態や店舗によって売るものも働く時間も変わります。気になった会社は、求人票で「何を・誰に売るか」と「年間休日・シフト・転勤範囲」を必ず確かめてください。　<a href="#check">求人票チェックリスト →</a></p>
+    <p class="comp-inline-link"><a href="#kigyo" data-compcat="${compEsc(one)}">${label} →</a></p>
+  </div>`;
+}
+function compAttachJobs(){
+  Object.keys(COMP_JOBMAP).forEach(id=>{
+    const art=document.getElementById("job-"+id);if(!art)return;
+    const col=art.querySelector(".job-body .split > div");if(!col)return;
+    col.insertAdjacentHTML("beforeend",compMiniHTML(COMP_JOBMAP[id],6));
+  });
+}
+function compAttachGyokai(){
+  document.querySelectorAll("#gyoBody td.gyoname").forEach(td=>{
+    const name=(td.childNodes[0]&&td.childNodes[0].textContent||"").trim();
+    const m=COMP_GYOMAP[name];if(!m)return;
+    const [cat,q]=m;
+    const n=COMP_LIST.filter(c=>(cat==="all"||c[0]===cat)&&(!q||(c[1]+c[2]+c[3]).includes(q))).length;
+    if(!n)return;
+    td.insertAdjacentHTML("beforeend",
+      `<br><a class="gyo-link" href="#kigyo" data-compcat="${compEsc(cat)}" data-compq="${compEsc(q)}">この業態の企業 ${n}社 →</a>`);
+  });
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-compcat]");
+  if(!a)return;
+  e.preventDefault();
+  compApplyFilter(a.getAttribute("data-compcat"),a.getAttribute("data-compq")||"");
+});
+document.getElementById("compQ").addEventListener("input",e=>{compQ=e.target.value;compReset();});
+document.getElementById("compMore").addEventListener("click",()=>{compShown+=20;compRender();});
+document.getElementById("calcBtn").addEventListener("click",()=>{
+  document.querySelectorAll("#result .rescard").forEach(card=>{
+    if(card.querySelector(".comp-res"))return;
+    const a=card.querySelector('a[href^="#job-"]');if(!a)return;
+    const id=a.getAttribute("href").replace("#job-","");
+    if(!(id in COMP_JOBMAP))return;
+    const spec=COMP_JOBMAP[id],cats=spec.c||[],picks=compPick(spec,3);
+    if(!picks.length)return;
+    const one=(cats.length===1)?cats[0]:"all";
+    card.insertAdjacentHTML("beforeend",
+      `<p class="comp-res">${cats.length?"この業態の企業例":"例えばこんな企業"}：${picks.map(c=>compEsc(c[1])).join("、")}　<a href="#kigyo" data-compcat="${compEsc(one)}">企業を見る →</a></p>`);
+  });
+});
+drawCat();drawSz();compRender();compAttachJobs();compAttachGyokai();
+
+</script>
+</body>
+</html>
